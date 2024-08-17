@@ -6,6 +6,7 @@
 
 ## 1) Установка ОС KaliLinux
 - Настройка конфигурации IPv4 для ВМ KaliLinux  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgKaliLinux/settingsIP_Kali.png)
 
 
 ## 2) Установка ОС Windows10
