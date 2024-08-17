@@ -14,3 +14,7 @@
 - Проверка работы SSH Server на ВМ Windows10 путем подключения с KaliLinux  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task3/img/Connect_SSH_Win10.png)  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task3/img/SSH_Win10.png)
+
+## 2) Разрешение подключения по RDP
+- Для разрешения подключения на Windows 10 по RDP необходимо перейти в: "Пуск-Настройки-Система-Удаленный рабочий стол-Включить удаленный рабочий стол"  
+![image]()
