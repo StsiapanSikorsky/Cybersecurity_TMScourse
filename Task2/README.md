@@ -8,6 +8,9 @@
 - Настройка конфигурации IPv4 для ВМ KaliLinux  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgKaliLinux/settingsIP_Kali.png)
 
+- Проверка IPv4 через трминал  
+![image]()
+
 
 ## 2) Установка ОС Windows10
 - Настройка конфигурации IPv4 для ВМ Windows 10 Pro  
