@@ -6,11 +6,11 @@
 
  ## 1) Установка на ВМ Windows10 SSH Server
  - Установка SSH Server  
- ![image]()
+ ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task3/img/installSSHserv_Win10.png)
 
  - Запуск SSH Server  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task3/img/StartSSHserver_Win10.png)
 
-- Проверка работы SSH Server на ВМ Windows10 путем подключения с KaliLinux
-![image]()  
-![image]()
+- Проверка работы SSH Server на ВМ Windows10 путем подключения с KaliLinux  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task3/img/Connect_SSH_Win10.png)  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task3/img/SSH_Win10.png)
