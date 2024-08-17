@@ -3,4 +3,9 @@
 2) **Загрузка образов ОС**
 
 ## 1) Установка VirtuslBox
-![Image alt](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task1/img/VBox.png)
+![Скриншот главного окна VirtalBox](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task1/img/VBox.png)
+
+## 2) Загрузка ОС
+![Образ KaliLinu]()  
+![Образ Windows 10]()  
+![Образ Windows Server 2019]()
