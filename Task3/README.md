@@ -28,6 +28,8 @@
 
 ## 4) BrudeForce ВМ Windows10
 - Создание словаря паролей (цифровых трехзнычных) с использованием CRUNCH  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task3/img/Crunch_generated.png)
 
 В результате формируется документ dict2.txt содержащий словарь цифровых паролей от 1 до 3 знаков
+
+- Проведение атаки на Windows 10 (username:stepa password:51) при помощи HYDRA
