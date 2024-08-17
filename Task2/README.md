@@ -30,3 +30,19 @@
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgWinServer/IPconf_WinServer.png)
 
 ## 4) Установка и проверка связи каждой машины
+- Создание сети NAT В VirtualBox   
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgPings/Create_NAT.png)
+
+- Добавление сети NAT в ВМ (на примере KaliLinux)  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgPings/addNAT_Kali.png)
+
+- Проверка связанности ВМ Windows10  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgPings/Ping_Win10.png)
+
+- Проверка связанности ВМ WindowsServer 2019
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgPings/Ping_WinServer.png)
+
+- Проверка связанности ВМ KaliLinux
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgPings/Ping_Kali.png)
+
+
