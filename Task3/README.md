@@ -21,7 +21,13 @@
 
 ## 3) Сканирование сети при помощи NMap (KaliLinux)
 - Полное сканирование при помощи nmap  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task3/img/NMap_resultScan.png)  
 
 - Сканирование определенного адреса с утилитой -Pn (считать что машина включена)  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task3/img/NMap_scanning.png)
+
+## 4) BrudeForce ВМ Windows10
+- Создание словаря паролей (цифровых трехзнычных) с использованием CRUNCH  
 ![image]()
+
+В результате формируется документ dict2.txt содержащий словарь цифровых паролей от 1 до 3 знаков
