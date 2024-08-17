@@ -7,11 +7,11 @@
 ## 1) Установка ОС KaliLinux
 
 ## 2) Установка ОС Windows10
-- Настройка конфигурации IPv4 для ВМ Windows 10 Pro
+- Настройка конфигурации IPv4 для ВМ Windows 10 Pro  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgWin10/IPconf_for_Win10.png)
 
-- Проверка IPv4 через командную строку
+- Проверка IPv4 через командную строку  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgWin10/IPconf_Win10_cmd.png)
 
-- Установка разрешения на входящие echo запросы для проверки пинга
+- Установка разрешения на входящие echo запросы для проверки пинга   
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgWin10/Btandmauer_echo.png) 
