@@ -3,4 +3,4 @@
 2) **Загрузка образов ОС**
 
 ## 1) Установка VirtuslBox
-![Интерфейс главного окна VirtualBox](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task1/img/VBox.png)
+![Image alt](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task1/img/VBox.png)
