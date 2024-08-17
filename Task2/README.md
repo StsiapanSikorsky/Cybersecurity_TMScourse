@@ -39,10 +39,10 @@
 - Проверка связанности ВМ Windows10  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgPings/Ping_Win10.png)
 
-- Проверка связанности ВМ WindowsServer 2019
+- Проверка связанности ВМ WindowsServer 2019  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgPings/Ping_WinServer.png)
 
-- Проверка связанности ВМ KaliLinux
+- Проверка связанности ВМ KaliLinux  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgPings/Ping_Kali.png)
 
 
