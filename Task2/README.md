@@ -23,3 +23,10 @@
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgWin10/Btandmauer_echo.png) 
 
 ## 3) Установка Windows Server 2019
+- Настройка конфигурации IPv4 для ВМ Windows Server 2019  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgWinServer/IPconf_for_WinServer.png)
+
+- Проверка IPv4 через PowerShell  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgWinServer/IPconf_WinServer.png)
+
+## 4) Установка и проверка связи каждой машины
