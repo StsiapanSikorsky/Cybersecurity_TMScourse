@@ -21,3 +21,5 @@
 
 - Установка разрешения на входящие echo запросы для проверки пинга   
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgWin10/Btandmauer_echo.png) 
+
+## 3) Установка Windows Server 2019
