@@ -9,7 +9,7 @@
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgKaliLinux/settingsIP_Kali.png)
 
 - Проверка IPv4 через трминал  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task2/imgKaliLinux/Ipconf_Kali.png)
 
 
 ## 2) Установка ОС Windows10
