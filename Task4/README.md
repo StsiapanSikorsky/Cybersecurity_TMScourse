@@ -20,10 +20,10 @@
 
 ## 1.2 Работа в GitPod используя графический интерфейс
 Для обучения работы GitPod был изучен следующий ресурс:  
-[href](https://github-com.translate.goog/adam-p/markdown-here/wiki/Markdown-Cheatsheet?_x_tr_sl=en&_x_tr_tl=ru&_x_tr_hl=ru)
+[Статья в GitHub по основным командам](https://github-com.translate.goog/adam-p/markdown-here/wiki/Markdown-Cheatsheet?_x_tr_sl=en&_x_tr_tl=ru&_x_tr_hl=ru)
 
 Результат работы в GitPod  
-![Статья в GitHub по основным командам](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task4/img/GitPod_Work.png)
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task4/img/GitPod_Work.png)
 
 
 ## 2) Проработка и изучение модели OSI
