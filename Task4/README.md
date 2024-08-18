@@ -14,7 +14,14 @@
 ## 1 Работа с репозиторием GitHub
 ### 1.1 Создание профиля в GitHub и GitPod  
 - Профиль GitHub  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task4/img/Create_GitHub.png)  
 - Профиль GitPod  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task4/img/Create_GitPod.png)  
+
+## 1.2 Работа в GitPod используя графический интерфейс
+Для обучения работы GitPod был изучен следующий ресурс:  
+[href](https://github-com.translate.goog/adam-p/markdown-here/wiki/Markdown-Cheatsheet?_x_tr_sl=en&_x_tr_tl=ru&_x_tr_hl=ru)
+
+Результат работы в GitPod
+![image]()
 
