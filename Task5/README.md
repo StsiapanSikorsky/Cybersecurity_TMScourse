@@ -38,10 +38,10 @@
 
  #### Для осуществления данной функцции необходимо:
  1) В меню настроек роутера перейти на DHCP-сервис и зарезервировать адрес для определенного устройства (записываем MAC адрес устройства для которого выполняем проброс и задаем ему статический IPv4 LAN сети) 
- ![image]()  
+ ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task5/imgTP_Link/Probr1.png)  
 
  2) Перходим во вкладку NAT-переадресация->Перенаправление задаем виртуальный сервис, который мы хотим добавить  
- ![image]()  
+ ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task5/imgTP_Link/Probr2.png)  
 
  3) После изменений производим сохранение
 
