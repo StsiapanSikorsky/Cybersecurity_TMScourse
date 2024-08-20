@@ -14,7 +14,9 @@
 ### 1.1 Зайти в настройки домашнего роутера
 - Домашний роутер: TP_Link Archer64  
 Вход осуществлялся по IPv4 192.168.0.1  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task5/imgTP_Link/Router_TP_Link_Archer%20A64.png)  
+
+### 1.2 Изучение настроек, скриншоты проброса портов приложений
 
 
 ## 2) Работа с Cisko Packet Tracer
