@@ -16,7 +16,38 @@
 Вход осуществлялся по IPv4 192.168.0.1  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task5/imgTP_Link/Router_TP_Link_Archer%20A64.png)  
 
-### 1.2 Изучение настроек, скриншоты проброса портов приложений
+### 1.1 Изучение настроек
+- Пул адресов предоставляемый модемом  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task5/imgTP_Link/TPL_DHCP.png)  
+
+- Список подключенных DHCP устройств  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task5/imgTP_Link/TPL_DHCP_settings.png)  
+
+- Список подключенных устройств 
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task5/imgTP_Link/TPL_connect._Device.png)  
+
+- Включение технологии NAT  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task5/imgTP_Link/TPL_OpenNAT.png)  
+
+- Добавление перенаправления портов NAT  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task5/imgTP_Link/NAT_pereadres.png)  
+
+### 1.2 Проброс портов
+Проброс портов - технология позволяющая обращаться из Интернета к компьютеру, во внутренней сети за маршрутизатором, использующим технологию NAT.  
+ Доступ осуществляется при помощи перенаправления трафика определенных портов с внешнего адреса маршрутизатора на адрес выбранного компьютера в локальной сети.
+
+ #### Для осуществления данной функцции необходимо:
+ 1) В меню настроек роутера перейти на DHCP-сервис и зарезервировать адрес для определенного устройства (записываем MAC адрес устройства для которого выполняем проброс и задаем ему статический IPv4 LAN сети) 
+ ![image]()  
+
+ 2) Перходим во вкладку NAT-переадресация->Перенаправление задаем виртуальный сервис, который мы хотим добавить  
+ ![image]()  
+
+ 3) После изменений производим сохранение
+
+
+
+
 
 
 ## 2) Работа с Cisko Packet Tracer
