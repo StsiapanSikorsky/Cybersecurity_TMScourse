@@ -22,7 +22,7 @@ _1_. [Lab SSRF_1]()
  SELECT * - извлечение всей таблицы
 
 Отчет о выполнении задания 1
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson1.png)
 
 ### 2. Урок SQL 2 - запросы с ограничениями Ч1
  
@@ -36,12 +36,12 @@ WHERE - оператор условия выполняющий фильтрац�
 |IN (...)|номер находится в списке|column IN (2,4,5)|
 |NOT IN(...)|номер не находится в списке|column NOT IN(1,3,4)|  
 
->[!NONE]  
+>[!IMPORTANT]  
 Пример структуры запроса:
 SELECT Id, Title FROM mytable WHERE ID = 6
 
 Отчет о выполнении задания 2   
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson2.png)  
 
 ### 3. Урок SQL 3 - запросы с ограничениями Ч2  
 
@@ -63,7 +63,9 @@ SELECT Title, Director FROM movies WHERE Director = "John Lasseter";
 SELECT Title, Director FROM movies WHERE Director NOT LIKE "John Lasseter";  
 
 Отчет о выполнении задания 3  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson3.png)  
+
+### 4. Урок SQL 4 - фильтрация и сортировка результатов запроса
 
 
 
