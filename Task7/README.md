@@ -99,6 +99,7 @@ ON - ключевое слово предназначенное для совм�
 SELECT title, domestic_sales, international_sales FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id;
 SELECT title, domestic_sales, international_sales FROM movies JOIN boxoffice ON movies.id = boxoffice,movie_id WHERE international_sales > domestic_sales;  
 SELECT title, rating FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id ORDER BY Rating DESC;   
+
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson7.png)  
 
 
