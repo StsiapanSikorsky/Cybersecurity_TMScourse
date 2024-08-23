@@ -83,11 +83,11 @@ SELECT Title FROM Movies ORDER BY Title ASC LIMIT 5;
 SELECT Title FROM Movies ORDER BY Title ASC LIMIT 5 OFFSET 5;
 
 Отчет о выполнении задания 4:  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson4.png)  
 
 ### 5. Обзор SQL - простые запросы SELECT
 Отчет о выполнении задания 5:  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson5.png)  
 
 ### 6. Многотабличные запросы с соединениями JOIN  
 
