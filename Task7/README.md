@@ -90,6 +90,16 @@ SELECT Title FROM Movies ORDER BY Title ASC LIMIT 5 OFFSET 5;
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson5.png)  
 
 ### 6. Многотабличные запросы с соединениями JOIN  
+Нормализация - разбиение таблиц на несколько ортогональных частей.
+
+JOIN - ключевое слово необходимое для подключения сторонней таблицы (все сторонние условия WHERE, ORDER BY ставятся после).  
+ON - ключевое слово предназначенное для совмещения колонок таблиц (обычно их ID)
+
+>[!IMPORTANT]  
+SELECT title, domestic_sales, international_sales FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id;
+SELECT title, domestic_sales, international_sales FROM movies JOIN boxoffice ON movies.id = boxoffice,movie_id WHERE international_sales > domestic_sales;  
+SELECT title, rating FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id ORDER BY Rating DESC;   
+![image]()
 
 
 
