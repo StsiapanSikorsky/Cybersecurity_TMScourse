@@ -66,6 +66,35 @@ SELECT Title, Director FROM movies WHERE Director NOT LIKE "John Lasseter";
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson3.png)  
 
 ### 4. Урок SQL 4 - фильтрация и сортировка результатов запроса
+>[!NOTE]  
+DISTINCT -  ключевое слово, позволяющее отбрасывать строки, содержающие значения столбца  
+Пример:  
+SELECT DISTINCT column1, column2 FROM mytable WHERE ...  
+
+>[!NOTE]  
+ORDER BY - ключевое слово, позволяющее сортировать результаты по заданному столбцу. Когда JRDER BY указано, каждая строка сортируется в алфавитно цифровом порядке, на основе указанного значения столбца. (ORDER BY column ASC/DESC (DESC-в порядке убывания))  
+LIMIT - ключевое слово позволяющее уменьшать число возвращаемых строк (LIMIT num_limit)
+OFFSET - ключевое слово позволяющее вести счет числовых рядов начиная с (OFFSET num_offset)
+
+>[!IMPORTANT]  
+Примеры вывода:  
+SELECT Title, Year FROM Movies ORDER BY Year DESC LIMIT 5;  
+SELECT Title FROM Movies ORDER BY Title ASC LIMIT 5;  
+SELECT Title FROM Movies ORDER BY Title ASC LIMIT 5 OFFSET 5;
+
+Отчет о выполнении задания 4:  
+![image]()  
+
+### 5. Обзор SQL - простые запросы SELECT
+Отчет о выполнении задания 5:  
+![image]()  
+
+### 6. Многотабличные запросы с соединениями JOIN  
+
+
+
+
+
 
 
 
