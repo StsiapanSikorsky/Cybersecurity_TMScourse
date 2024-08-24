@@ -117,24 +117,21 @@ SSL (Secure Sockets Layer) - криптогрфический протокол, 
 > ssh-keygen -t ed25519  
 
 Ключ был сгенерирован без параметров (дефолтный алгоритм при этом ed25519). При генерации указывалась корневая папка в которую добавляются ключи, а также задается пароль. 
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task6/img/Regen_key_ed25519.png)  
 
-Приватный ключ имеет название key255, публичный ключ key255.pub  
-![image]()  
+Приватный ключ имеет название key255, публичный ключ key255.pub (перенесены в ./ssh)  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task6/img/key255.png)  
 
 Повторяем данные действия для Windows 10  
 - Генерация ключа в PowerShell  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task6/img/key255_Windows.png)  
 
-- Отображение нахождения ключа  
-![image]()  
+- Отображение нахождения ключа (перенесены в папку Users/stepa/ssh)  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task6/img/key_Windows_show.png)  
 
-### 2.2 Организация безпарольного доступа с Windows10 на KaliLinux
-Переносим публичный ключ в файл authorized_keys
->cat key255.pub >> authorized_keys  
-
+### 2.2 Организация безпарольного доступа с KaliLinux на Windows10
 - Передаем публичный ключ на ВМ Windows10  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task6/img/add_PubKey_toWindows.png)  
 
 - Редактирование файла доступа по SSH /etc/ssh/sshd-config  
 _1_. Смена порта SSH на 2233  
@@ -146,7 +143,7 @@ _6_. Включение PubkeyAuthentication (вход по публичному
 _7_. Включение AuthorizedKeysFiles  
 _8_. Password Authentication no  
 _9_. PermintEmptyPassword no (запрет разрешения пустого пароля)  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task6/img/red_Kali_sshd-config.png)  
 
 
 
