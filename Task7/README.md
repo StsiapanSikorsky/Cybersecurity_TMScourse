@@ -1,18 +1,18 @@
 # Домашнее задание 7 - типы атак OWASP top 10  
 **1) Изучение SQL запросов**  
-- [Прохождение заданий в SQLBOLT]()  
+- [Прохождение заданий в SQLBOLT](https://sqlbolt.com/)  
 
 **2)  Лабораторные работы по OWASP top 10**
 - Лабораторные работы из практики Broken Access Control   
-_1_. [Lab Broken Access Control_1]()  
-_2_. [Lab Broken Access Control_2]()
+_1_. [Lab Broken Access Control_1](https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter)  
+_2_. [Lab Broken Access Control_2](https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter)
 - Лабораторные работы из практики SQL-Injections  
-_1_. [Lab SQL-Injection_1]()
+_1_. [Lab SQL-Injection_1](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
 - Лабораторная работа из практики Server-Side Request Forgery  
-_1_. [Lab SSRF_1]()
+_1_. [Lab SSRF_1](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
 
 **3) Тренировка поиска уязвимостей на примере OWASP Juice Shop**
-- [OWASP Juice Shop]()
+- [OWASP Juice Shop](https://spy-soft.net/owasp-juice-shop/)
 
  ## 1) Изучение SQL-запросов
  ### 1. Урок SQL 1 - запросы SELECT 101
