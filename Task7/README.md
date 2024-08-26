@@ -119,16 +119,16 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildi
 Цель лабораторной работы - получение доступа с правами администратора на сервисе и удаление пользователя **carlos**
 
 - При попытке получения доступа к /admin путем простого добавления пользователя в аддресную строку, был получен отказ в доступ  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab1_0.png)  
 
 - Просмотр файлов Cookie на сайте показал заданное значение false для поля administrator, после чего значение было изменено  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab1_1.png)
 
 - В результате был получен доступ к сайту от имени администратор и можно было приступать к удалению пользователя carlos  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab1_2.png)  
 
 - После проделанных действий лабораторная работа была успешно выполнена  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab1_3.png)  
 
 #### Lab Broken Access Control_2
 
