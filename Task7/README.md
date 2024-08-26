@@ -102,6 +102,15 @@ SELECT title, rating FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_i
 
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson7.png)  
 
+### 7. Внешние соединения  
+В случае, если данные в таблицах имеют не симметричный характер, то необходимо использовать модификаторы: **INNER/LEFT/RIGHT/FULL JOIN**  
+
+>[!IMPORTANT]  
+SELECT DISTINCT Building FROM Employees;  
+SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildings.Building_name = Employees.Building;  
+![image]()  
+
+
 
 
 
