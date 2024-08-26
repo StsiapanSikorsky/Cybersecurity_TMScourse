@@ -108,11 +108,29 @@ SELECT title, rating FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_i
 >[!IMPORTANT]  
 SELECT DISTINCT Building FROM Employees;  
 SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildings.Building_name = Employees.Building;  
+
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson7.png)  
+
+
+
+## 2) Лабораторные работы OWASP top 10  
+### 2.1 Broken Access Control  
+#### Lab Broken Access Control_1  
+Цель лабораторной работы - получение доступа с правами администратора на сервисе и удаление пользователя **carlos**
+
+- При попытке получения доступа к /admin путем простого добавления пользователя в аддресную строку, был получен отказ в доступ  
 ![image]()  
 
+- Просмотр файлов Cookie на сайте показал заданное значение false для поля administrator, после чего значение было изменено  
+![image]()
 
+- В результате был получен доступ к сайту от имени администратор и можно было приступать к удалению пользователя carlos  
+![image]()  
 
+- После проделанных действий лабораторная работа была успешно выполнена  
+![image]()  
 
+#### Lab Broken Access Control_2
 
 
 
