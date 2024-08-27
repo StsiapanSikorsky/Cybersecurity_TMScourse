@@ -4,12 +4,11 @@
 
 **2)  Лабораторные работы по OWASP top 10**
 - Лабораторные работы из практики Broken Access Control   
-_1_. [Lab Broken Access Control_1](https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter)  
-_2_. [Lab Broken Access Control_2](https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter)
+[Lab Broken Access Control_1](https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter)  
 - Лабораторные работы из практики SQL-Injections  
-_1_. [Lab SQL-Injection_1](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
+[Lab SQL-Injection_1](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
 - Лабораторная работа из практики Server-Side Request Forgery  
-_1_. [Lab SSRF_1](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
+[Lab SSRF_1](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
 
 **3) Тренировка поиска уязвимостей на примере OWASP Juice Shop**
 - [OWASP Juice Shop](https://spy-soft.net/owasp-juice-shop/)
@@ -115,7 +114,6 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildi
 
 ## 2) Лабораторные работы OWASP top 10  
 ### 2.1 Broken Access Control  
-#### Lab Broken Access Control_1  
 Цель лабораторной работы - получение доступа с правами администратора на сервисе и удаление пользователя **carlos**
 
 - При попытке получения доступа к /admin путем простого добавления пользователя в аддресную строку, был получен отказ в доступ  
@@ -130,7 +128,17 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildi
 - После проделанных действий лабораторная работа была успешно выполнена  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab1_3.png)  
 
-#### Lab Broken Access Control_2
+#### 2.2 SQL-Injection
+Цель лабораторной работы: извлечение скрытых данных путем внедрения SQL инъекции в предложение WHERE
+
+- Заходим в любой раздел на эмулированом сайте
+- В строке ввода адреса сервера после **cathegory** прописываем следующий результат запроса: 
+> '+OR+1=1 --
+
+- В результате обновления страницы, получаем список скрытых товаров и отчет о выполнении лабораторной работы   
+![image]()  
+
+
 
 
 
