@@ -136,7 +136,9 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildi
 > '+OR+1=1 --
 
 - В результате обновления страницы, получаем список скрытых товаров и отчет о выполнении лабораторной работы   
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/SQL_lab1_2.png)  
+
+#### 2.3 Service - Side Request Forgery
 
 
 
