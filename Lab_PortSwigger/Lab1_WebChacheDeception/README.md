@@ -15,24 +15,25 @@ X-Cache:refresh - кэшированное содержимое устарели
 
 ### 2.1 
 Логинимся под известным пользователем и смотрим ответ сервера (было найдено что ключ API явно передается в коде HTML страницы)   
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Lab_PortSwigger/Lab1_WebChacheDeception/img/labCache_1.png)  
 
 ### 2.2  
 Пробуем обратитья к кэшу, для его проверки, путем добавления названия "123.js". В результате получаем ответ от сервера, так как кэш оказался пустой  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Lab_PortSwigger/Lab1_WebChacheDeception/img/labCache_2.png)  
 
 ### 2.3  
 Повторно отправляем кэш запрос и получаем ответ из кэша (X-Cache: hit)  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Lab_PortSwigger/Lab1_WebChacheDeception/img/labCache_3.png)
 
 ### 2.4
 Переходим в раздел внедрения эксплоита и копируем путь, изменяя файл находящийся в кэше  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Lab_PortSwigger/Lab1_WebChacheDeception/img/labCache_4.png)  
 
 ### 2.5
 Копируем новый адрес в браузер и получаем значение API для carlos  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Lab_PortSwigger/Lab1_WebChacheDeception/img/labCache_5.png)  
 
 ### 2.6 
-Результат выполнения лабораторной работы
+Результат выполнения лабораторной работы  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Lab_PortSwigger/Lab1_WebChacheDeception/img/labCache_6.png)  
 
