@@ -110,6 +110,19 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildi
 
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson7.png)  
 
+### 8. Краткое замечание о значениях NULL  
+>[!IMPORTANT]  
+SELECT Name, Role FROM employees WHERE building IS NULL  
+SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Building_name = Building WHERE Role IS NULL    
+![image]()  
+
+
+### 9. Запросы с выражениями  
+
+
+
+
+
 
 
 ## 2) Лабораторные работы OWASP top 10  
@@ -128,7 +141,7 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildi
 - После проделанных действий лабораторная работа была успешно выполнена  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab1_3.png)  
 
-#### 2.2 SQL-Injection
+### 2.2 SQL-Injection
 Цель лабораторной работы: извлечение скрытых данных путем внедрения SQL инъекции в предложение WHERE
 
 - Заходим в любой раздел на эмулированом сайте
@@ -138,7 +151,42 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildi
 - В результате обновления страницы, получаем список скрытых товаров и отчет о выполнении лабораторной работы   
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/SQL_lab1_2.png)  
 
-#### 2.3 Service - Side Request Forgery
+### 2.3 Service - Side Request Forgery  
+Подделка запросов на стороне сервера (SSRF) - уязвимость веб-безопасности, позволяющая злоумышленнику заставить серверное приложение отправлять запросы в непредусмотренное место. 
+
+Злоумышленник может заставить сервер подключиться к внутренним службам в инфроструктуре организации, либо произвольным внешним службам. (Происходит утечка учетных данных авторизации)  
+
+####  Ход выполнения лабораторной работы  
+Цель:   
+- При попытке получения доступа к /admin путем простого добавления пользователя в аддресную строку, был получен отказ в доступе   
+![image]()  
+
+- Переходим на страницу товара и получаем данные о количестве товара
+![image]()  
+
+- При этом осуществляем перехвать запроса и ответа сервера  
+![image]()
+
+- Заменяем stockAPI запрос на сервер http://localhost. В ответе находим дерикторию /admin и подключаемся к ней  
+![image]()  
+![image]()  
+
+- Графически отображаем дерикторию админа  
+![image]()  
+
+- Копируем путь удаления пользователя carlos и отправляем запрос  
+![image]()
+
+- Отчет об успешно выполненной работе  
+![image]()  
+
+
+
+
+
+
+
+
 
 
 
