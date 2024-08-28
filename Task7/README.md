@@ -127,7 +127,7 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Buildin
 
 ## 2) Лабораторные работы OWASP top 10  
 ### 2.1 Broken Access Control  
-Цель лабораторной работы - получение доступа с правами администратора на сервисе и удаление пользователя **carlos**
+Цель: получение доступа с правами администратора на сервисе и удаление пользователя **carlos**
 
 - При попытке получения доступа к /admin путем простого добавления пользователя в аддресную строку, был получен отказ в доступ  
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab1_0.png)  
@@ -142,7 +142,7 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Buildin
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab1_3.png)  
 
 ### 2.2 SQL-Injection
-Цель лабораторной работы: извлечение скрытых данных путем внедрения SQL инъекции в предложение WHERE
+Цель: извлечение скрытых данных путем внедрения SQL инъекции в предложение WHERE
 
 - Заходим в любой раздел на эмулированом сайте
 - В строке ввода адреса сервера после **cathegory** прописываем следующий результат запроса: 
@@ -157,28 +157,28 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Buildin
 Злоумышленник может заставить сервер подключиться к внутренним службам в инфроструктуре организации, либо произвольным внешним службам. (Происходит утечка учетных данных авторизации)  
 
 ####  Ход выполнения лабораторной работы  
-Цель:   
+Цель: путем подделки запросов удалить пользователя **carlos**     
 - При попытке получения доступа к /admin путем простого добавления пользователя в аддресную строку, был получен отказ в доступе   
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab3_1.png)  
 
 - Переходим на страницу товара и получаем данные о количестве товара
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab3_2.png)  
 
 - При этом осуществляем перехвать запроса и ответа сервера  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab3_3.png)
 
 - Заменяем stockAPI запрос на сервер http://localhost. В ответе находим дерикторию /admin и подключаемся к ней  
-![image]()  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab3_4.png)  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab3_5.png)  
 
 - Графически отображаем дерикторию админа  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab3_6.png)  
 
 - Копируем путь удаления пользователя carlos и отправляем запрос  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab3_7.png)
 
 - Отчет об успешно выполненной работе  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgLabsa/lab3_8.png)  
 
 
 
