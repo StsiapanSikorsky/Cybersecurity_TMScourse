@@ -196,7 +196,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin  
 
 Результат установки и версия Docker:  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgJuiceShop/Docker_finishInstall.png)
 
 ### 3.2 Установка Juice Shop 
 Установка описанна по следующей ссылке: [Установка JuiceShop](https://hub.docker.com/r/bkimminich/juice-shop)  
@@ -206,13 +206,13 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 После запускаем docker командой run на 80 локальном порту (3000 в docker) используя команду:  
 >docker run -d -p 80:3000 bkimminich/juice-shop  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgJuiceShop/Run_JuiceShop.png)  
 
 Как результат по адресу localhost:80 открывает JuiceShop в браузере  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgJuiceShop/JuiceShopOnKali_Window.png)  
 
 Используя адрес ВМ KaliLinux (10.10.0.6) заходим на JuiceShop в ВМ Windows10  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgJuiceShop/JuiceShopOnWindows_Window.png)  
 
 
 
