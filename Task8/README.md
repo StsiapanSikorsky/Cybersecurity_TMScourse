@@ -18,22 +18,22 @@ _8_. Extension spoofing.
 
 ## 1) Провести DOS атаку на JuiceShop  
 ### 1.1 Запуск контэйнера Docker JuiceShop  
-![image]()  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/Docker_StartJuiceShop.png)  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/JuiceShop_Window.png)  
 
 ### 1.2 Запуск DOS сервиса Xerxes  
 - Скачивание репозитория с github  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/Xerxes_1_coppy.png)    
 
 - Компиляция программы  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/Xerxes_2_compil.png)   
 
 - Запуск Xerxes  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/Xerxes_3_startAttack.png)   
 
 ### 1.3 Нагрузка во время атаки  
 - Результат нагрузки до атаки  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/CPU_beforeAttack.png)    
 
 - Результат нагрузки во время атаки (CPU возросло на 10-20%)  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/CPU_afterAttack.png)    
