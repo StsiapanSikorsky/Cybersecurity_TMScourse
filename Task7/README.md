@@ -183,6 +183,38 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Buildin
 
 
 
+## 3) Тренировка поиска уязвимостей на примере OWASP Juice Shop
+### 3.1 Установка docker на ВМ KaliLinux
+>sudo apt update  
+sudo apt install -y docker.io  
+sudo systemctl enable docker --now  
+sudo usermod -aG docker $USER  
+sudo apt-get install ca-certificates curl  
+sudo install -m 0755 -d /etc/apt/keyrings  
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc  
+sudo chmod a+r /etc/apt/keyrings/docker.asc  
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin  
+
+Результат установки и версия Docker:  
+![image]()
+
+### 3.2 Установка Juice Shop 
+Установка описанна по следующей ссылке: [Установка JuiceShop](https://hub.docker.com/r/bkimminich/juice-shop)  
+
+Для скачивания образа docker используем команду docker pull
+>docker pull bkimminich/juice-shop  
+
+После запускаем docker командой run на 80 локальном порту (3000 в docker) используя команду:  
+>docker run -d -p 80:3000 bkimminich/juice-shop  
+![image]()  
+
+Как результат по адресу localhost:80 открывает JuiceShop в браузере  
+![image]()  
+
+Используя адрес ВМ KaliLinux (10.10.0.6) заходим на JuiceShop в ВМ Windows10  
+![image]()  
+
+
 
 
 
