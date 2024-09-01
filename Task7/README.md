@@ -206,6 +206,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 После запускаем docker командой run на 80 локальном порту (3000 в docker) используя команду:  
 >docker run -d -p 80:3000 bkimminich/juice-shop  
+
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgJuiceShop/Run_JuiceShop.png)  
 
 Как результат по адресу localhost:80 открывает JuiceShop в браузере  
