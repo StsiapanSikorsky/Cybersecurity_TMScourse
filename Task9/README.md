@@ -9,3 +9,25 @@
 ### Ссылки на дополнительные ресурсы
 [Github repo setoolkit](https://github.com/trustedsec/social-engineer-toolkit)  
 [Установка setolkit на Ubuntu](https://www.youtube.com/watch?v=y4sIesUADD8&themeRefresh=1)
+
+## 1) Установка setoolkit на Ubuntu
+- Клонируем репозиторий setoolkit в созданную нами папку
+>sudo git clone https://github.com/trustedsec/social-engineer-toolkit /setoolkit
+
+- Заходим в папку с репозиторием и начинаем установку **setoolkit**  
+>cd /setoolkit  
+>pip3 install -r requirements.txt  
+
+![image]()   
+
+>python3 setup.py  
+![image]()  
+
+- Запускаем setoolkit  
+![image]()
+
+## 2) Фишинговый сайт
+
+> 2) Webside Attack Vectors --> 3) Credential Harvester Attack Method --> 2) Site Cloner
+
+
