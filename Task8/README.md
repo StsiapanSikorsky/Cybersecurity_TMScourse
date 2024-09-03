@@ -36,4 +36,10 @@ _8_. Extension spoofing.
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/CPU_beforeAttack.png)    
 
 - Результат нагрузки во время атаки (CPU возросло на 10-20%)  
-![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/CPU_afterAttack.png)    
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task8/img/CPU_afterAttack.png)
+
+- Результаты до и во время атаки при помощи команды, а также вывод логов  
+>docker stats >> logs
+
+![image]()  
+![image]()  
