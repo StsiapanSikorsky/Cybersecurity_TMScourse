@@ -118,8 +118,15 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Buildin
 
 
 ### 9. Запросы с выражениями  
+Каждая БД имеет собственный поддерживаемый набор математических, строковых и датовых функций, которые можно использовать в запросе.  
+>AS-ключевое слово испльзующееся в запросе, которое изменяет описание последней объявленной колонки описание, например:  
+>SELECT column AS newNameColumn FROM mytable;    
 
-
+>[!IMPORTANT]
+>SELECT title, (domestics_sales + international_sales) / 1000000 AS Million FROM movies JOIN boxoffice ON movies.id = boxoffice.movie.id;    
+>SELECT title, rating * 10 AS Procent FROM movies JOIN boxoffice ON movies.id = boxoffice.movie.id;  
+>SELECT title, year FROM movies WHERE year % 2 = 0;
+![image]();
 
 
 
