@@ -20,7 +20,8 @@
 
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task9/img/install_setoolkit.png)   
 
->python3 setup.py  
+>python3 setup.py
+
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task9/img/install_setoolkit_2.png)  
 
 - Запускаем setoolkit  
