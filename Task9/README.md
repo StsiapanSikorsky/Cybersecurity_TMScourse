@@ -18,13 +18,13 @@
 >cd /setoolkit  
 >pip3 install -r requirements.txt  
 
-![image]()   
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task9/img/install_setoolkit.png)   
 
 >python3 setup.py  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task9/img/install_setoolkit_2.png)  
 
 - Запускаем setoolkit  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task9/img/setoolkit_start.png)
 
 ## 2) Фишинговый сайт
 
