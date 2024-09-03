@@ -32,3 +32,7 @@
 > 2) Webside Attack Vectors --> 3) Credential Harvester Attack Method --> 2) Site Cloner
 
 
+## 3) Рассылка фишинговых писем
+
+> 1) Social-Engineering Attack --> 5) Mass Mailer Attack --> 1) E-Mail Attack Single Email Address --> 1) Pre-Defined Template --> number message --> 
+
