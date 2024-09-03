@@ -49,7 +49,7 @@
 - Как результат получаем пароль для осуществления аунтефикации
 ![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task9/img/Authentication2_password.png)
 
->[!ATHENTION]  
+>[!CAUTION]  
 >Для использования данного пароля, необходимо чтобы в аккаунте Гугл была подключена двухэтапная аутентификация
 
 - Далее в терминале запускаем seetoolkit и для осуществленния данного типа атаки переходим по ветви:  
