@@ -113,8 +113,9 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Employees ON Buildi
 ### 8. Краткое замечание о значениях NULL  
 >[!IMPORTANT]  
 SELECT Name, Role FROM employees WHERE building IS NULL  
-SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Building_name = Building WHERE Role IS NULL    
-![image]()  
+SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Building_name = Building WHERE Role IS NULL
+
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson8.png)  
 
 
 ### 9. Запросы с выражениями  
@@ -126,7 +127,8 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Buildin
 >SELECT title, (domestics_sales + international_sales) / 1000000 AS Million FROM movies JOIN boxoffice ON movies.id = boxoffice.movie.id;    
 >SELECT title, rating * 10 AS Procent FROM movies JOIN boxoffice ON movies.id = boxoffice.movie.id;  
 >SELECT title, year FROM movies WHERE year % 2 = 0;
-![image]();
+
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson9.png);
 
 
 
