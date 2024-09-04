@@ -148,7 +148,7 @@ GROUP BY - группировка уолонок по уникальным гр�
 >SELECT Role, AVG(Years_employed) FROM employees GROUP BY Role;
 >SELECT Building, SUM(Years_employed) FROM employees GROUP BY Building;
 
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson10.png)  
 
 ### 11. Запросы с агрегатами Ч2
 
