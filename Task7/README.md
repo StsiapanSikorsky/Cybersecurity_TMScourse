@@ -128,8 +128,29 @@ SELECT DISTINCT Building_name, Role FROM Buildings LEFT JOIN Empoyees ON Buildin
 >SELECT title, rating * 10 AS Procent FROM movies JOIN boxoffice ON movies.id = boxoffice.movie.id;  
 >SELECT title, year FROM movies WHERE year % 2 = 0;
 
-![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson9.png);
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task7/imgSQL/SQL_lesson9.png)  
 
+### 10. Запросы с агрегатами Ч1  
+Агрегатные запросы позволяют суммировать информацию о группе строк данных.  
+Общие агрегатные функции:  
+|Функция|Описание|
+| :---------- | :-------------------------------------------------------------------------: |  
+|COUNT(column)|Подсчет количества строк в группе, если имя столбца не указано               |  
+|MIN(column)  |Находит меньшее числовое значение в указанном столбце для всех строк в группе|  
+|MAX(column)  |Находит большее числовое значение в указанном столбце для всех строк в группе|  
+|AVG(column)  |Находит среднее числовое значение в указанном столбце для всех строк в группе|  
+|SUM(column)  |Находит сумму всех числовых значений в указанном столбце для строк в группе  |  
+
+GROUP BY - группировка уолонок по уникальным группам
+
+>[!IMPORTANT]
+>SELECT MAX(Years_employed) FROM employees;  
+>SELECT Role, AVG(Years_employed) FROM employees GROUP BY Role;
+>SELECT Building, SUM(Years_employed) FROM employees GROUP BY Building;
+
+![image]()  
+
+### 11. Запросы с агрегатами Ч2
 
 
 
