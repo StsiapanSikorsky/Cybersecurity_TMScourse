@@ -2,7 +2,7 @@
 1. Ознакомиться с документацией и организациями по стандартизации в области ИБ
 2. Создать план личного развития и роста в ИБ согласно Cybersecurity Roadmap на год
 
-Ссылки на дополнительне ресурсы:
+Ссылки на дополнительне ресурсы:  
 [Приказ ОАЦ №40](https://president.gov.by/fp/v1/508/document-thumb__45508__original/45508.1676445432.32ffad2142.pdf)  
 [Приказ ОАЦ №130](https://www.oac.gov.by/public/content/files/files/law/prikaz-oac/2023%20-%20130.pdf)  
 [Приказ ОАЦ №66](https://www.oac.gov.by/public/content/files/files/law/prikaz-oac/2020%20-%2066.pdf)  
