@@ -3,7 +3,7 @@
 - компьютер главбуха компании  
 - ноутбук системного администратора  
 
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_10_11/img/Network_Organization.png)  
 
 - Раработать план защиты и план реагирования на атаку, которая гипотетически была проведена, используя матрицы D3fence и Re&ct
 P.S. в компании есть базы данных, AD DC, Cisco ASA, FTP/NFC serverc, Wi-Fi routers, Web server ISS/Nginx, внешние и внутренние ресурсы
@@ -18,19 +18,19 @@ P.S. в компании есть базы данных, AD DC, Cisco ASA, FTP/N
 
 ## Составление итоговой матрицы потенциальных угроз  
 ### Группировка APT41  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_10_11/img/1_APT41.png)  
 
 ### Группировка TeamTNT 
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_10_11/img/2_TeamTNT.png)  
 
 ### Группировка APT-C-36  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_10_11/img/3_APT-C-36.png)  
 
 ### Группировка APT28  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_10_11/img/4_APT28.png)  
 
 ### Группировка Aquatic Pand  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_10_11/img/5_AquaticPanda.png)  
 
 ### Итоговая матрица приоритетной работы для обеспечения безопасности компании  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_10_11/img/6_Result.png)  
