@@ -15,3 +15,22 @@ P.S. в компании есть базы данных, AD DC, Cisco ASA, FTP/N
 - [Mittre Att&ck defend](https://d3fend.mitre.org/)
 - [React Matrix](https://atc-project.github.io/react-navigator/)
 - [APT Groups and Operations](https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/edit?pli=1&gid=1636225066)
+
+## Составление итоговой матрицы потенциальных угроз  
+### Группировка APT41  
+![image]()  
+
+### Группировка TeamTNT 
+![image]()  
+
+### Группировка APT-C-36  
+![image]()  
+
+### Группировка APT28  
+![image]()  
+
+### Группировка Aquatic Pand  
+![image]()  
+
+### Итоговая матрица приоритетной работы для обеспечения безопасности компании  
+![image]()  
