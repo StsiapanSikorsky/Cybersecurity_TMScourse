@@ -28,50 +28,49 @@
 >Пуск->Settings->Accounts->Other users->Add->Users  
 
 Создаем профиль Sikorsky:
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1_CreateAdm1.png)  
 
 Для наделения правами администратора нажимаем ПКМ на созданного пользователя и выбираем Properties:  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1_CreateAdm2.png)  
 
 В открывшемся окне переходим во вкладку Member Of, который выводит нам список групп пользователя, нажимаем Add:  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1_CreateAdm3.png)  
 
-В открывшимся окне нажимаем Advanced:
-![image]()  
+В открывшимся окне нажимаем Advanced:  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1_CreateAdm4.png)  
 
 Нажимаем **Find Now** и выбираем группы для присвоения пользователю, присваиваем Administrator:  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1_CreateAdm5.png)  
 
-Теперь пользователь Sikorsky является администратором:  
-![image]()  
+Теперь пользователь Sikorsky является администратором
 
-- Запись пароля в хранилище
+
 
 ### 1.2 Создать УЗ без административных прав для сотрудника  
 Создаем УЗ пользователя **"Ivanov"**, при этом оставляем включенным опцию "Требовать смены пароля при следующем входе в систему":    
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1_CreateUser1.png)  
 
 Проверяем права нового пользователя, пользователь состоит только в группе User, без группы администратора:  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1_CreateUser2.png)  
 
 ### 1.3 Отключить УЗ "Гость"  
 Переходим по следующему пути:  
 >ПКМ по Пуск->computer manage(управление компьютером)->local users(локальные пользователи)->users->Guest    
 
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.3_CheckGuest.png)  
 
-- Переходим по следующему пути:  
+Переходим по следующему пути:  
 >Поиск->local security policy(локальная политика безопасности)->local policies(локальные политики)->security options(параметры безопасности)
 
-В появившемся списке находим **Account: Guesst account status** и проверяем статус (должен находиться в disabled)  
-![image]()  
+В появившемся списке находим **Account: Guesst account status** и проверяем статус (должен находиться в disabled)   
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.3_Guest2.png)  
 
 ### 1.4 Включение контроля учетных записей (UAC)  
 Для включения UAC переходим по следующему пути:  
 >Пуск->control panel(панель управления)->User Account(учетные записи пользователей)->User Account->Chnge User Account Control settings(Изменить параметры контроля учетных записей)  
 
 Устанавливаем ползунок в положение "Уведомлять только при попытках приложений внести изменения в компьютер (по умолчанию)":  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.4_onUAC.png)  
 
 
 ### 1.5 Настройка парольной политики  
@@ -83,8 +82,8 @@
 - максимальный срок действия паролей - 90 дней  
 - минимальная длина пароля - 8 символов  
 - пароль должен отвечать требованиям сложности - включено  
-![image]()  
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.5_PasswordPolitic1.png)  
 
 - пороговое значение блокировки - 5 ошибок  
 - продолжительность блокировки УЗ - 15 мин  
-![image]()
+![image](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.5_PasswordPolitic2.png)
