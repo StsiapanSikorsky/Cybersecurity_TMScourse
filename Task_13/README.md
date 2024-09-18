@@ -103,19 +103,20 @@ gpedit.msc - вход в групповые политики устройств�
 - журнал - последних 5 паролей  
 - требовать использование специальны символов - включено  
 - требовать использование прописных букв - включено  
-![1.6_PINPolicySettings]()  
+![1.6_PINPolicySettings](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.6_PINPoliceSettings.png)  
 
 
 ### 1.7 Включение RDP для УЗ администратора  
 Для включения RDP для администратора в Winows10 переходим по следующему пути  
 > Пуск->Settings->System->Remote Desktop(удаленый рабочий стол)->Enable Remote Desktop (On)  
-![1.7_OnRDP]()    
+
+![1.7_OnRDP](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.7_OnRDP.png)    
 
 Добавлям пользователей, которые могут получить удаленный доступ (добавляем УЗ администраторов)  
-![1.7_AddAdmin]()  
+![1.7_AddAdmin](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.7_AddAdmin.png)  
 
 Заходим в дополнительные параметры и включаем "Требовать использование устройствами аутентификации на уровне сети для подключения"  
-![1.7_OnAuthentication]()  
+![1.7_OnAuthentication](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.7_OnAuthentication.png)  
 
 
 ### 1.8 Настройка блокировки абочего стола  
@@ -123,32 +124,33 @@ gpedit.msc - вход в групповые политики устройств�
 >Поиск->Local Security Policy->Local Policy->Security Options  
 
 Находим параметр "Интерактивный вход в систему:предел простоя компьютера" ("Interactive logon:Machine inactivity limit") и выставляем значение 300 секунд  
-![1.8_InactivityLimit]()  
+![1.8_InactivityLimit](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.8_InactivityLimit.png)  
 
 ### 1.9 Настройка установки обновлений  
 Для настройки установки обновлений переходим:  
 > Пуск->Settings->Update & Security->Windows update  
 
 Производим выполнение обновлений для ВМ WindowsServer2019  
-![1.9_Update]()  
+![1.9_Update](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.9_Update.png)  
 
 Устанавливаем период активности компьютера в "change active hours"  
-![1.9_SetActiveHours]()  
+![1.9_SetActiveHours](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.9_SetActiveHours.png)  
 
 
 ### 1.10 Шифрование ЖД устройства с помощь BitLocker
 Устройство не поддерживает возможность шифрования, что указано в сведениях о системе
-![1.10_EncryptionNot]()  
+![1.10_EncryptionNot](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.10_NotEncryption.png)  
 
 
 ### 1.11 Включение брандмауэра и настройка логирования  
 Заходим в Windows Firewall и убеждаемся, что он включен  
-![1.11_OnFirewall]()  
+![1.11_OnFirewall](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.11_OnFirewall.png)  
 
 В "Windows Defender Firewall Properties" нажимаем ПКМ и переходим к настройке логгирования (Logging->Customize), где выставляем следующие настройки:  
 - включить запись пропущенных пакетов  
 - включить запись успешных подключений  
 - размер файла лога - 10240КБ  
-![1.11_SettingsOfLogging]()
+
+![1.11_SettingsOfLogging](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/1.11_SettingsOfLogging.png)
 
 
