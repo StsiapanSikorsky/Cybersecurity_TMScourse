@@ -157,61 +157,61 @@ gpedit.msc - вход в групповые политики устройств�
 ## 2) Добавить роль контроллера домена Active Directory
 ### 2.1 Установка Active Directory
 В диспетчере серверов (Server Manage) во вкладке Панель мониторинга (Dashboard) кликаем на **"Добавить роли и компоненты" (Add roles and features wizzard)**   
-![AD1_SetupStep1]()  
+![AD1_SetupStep1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD1_SetupStep1.png)  
 
 Выбираем сервер, на который устанавливаем Active Directory  
-![AD1_SetupStep2]()  
+![AD1_SetupStep2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD1_SetupStep2.png)  
 
 Выбираем роль - Доменные службы Active Directory  
-![AD1_SetupStep3]()  
+![AD1_SetupStep3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD1_SetupStep3.png)  
 
 Процесс выполнения установки
-![AD1_SetupStep4]()   
+![AD1_SetupStep4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD1_SetupStep4.png)   
 
 ### 2.2 Добавление домена и создание леса  
 После успешной установки Диспетчер серверов просит нас повысить уровень привелегий сервера, для этого кликаем на флаг с восклицательным знаком    
-![AD2_UpServer1]()   
+![AD2_UpServer1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD2_UpServer1.png)   
 
 После выбираем роль домену:  
 - добавить доменный контроллер в существующий домен  
 - добавить новый домен в лес  
 - добавить новый лес  
 Поскоольку это первый домен, выбираем добавить новый лес. Также выбираем доменное имя **"sikorsky.local"**  
-![AD2_AddForest]()  
+![AD2_AddForest](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD2_AddForest.png)  
 
 Задаем пароль резервной службе востановления каталогов DSNS  
-![AD2_UpServer3]()  
+![AD2_UpServer3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD2_UpServer3.png)  
 
 По Best Practise меняем пути  
-![AD2_UpServer4]()  
+![AD2_UpServer4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD2_UpServer4.png)  
 
 После перезагрузки, домен полностью установлен  
-![AD2_UpServer5]()  
+![AD2_UpServer5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD2_UpServer5.png)  
 
 ### 2.3 Групповые политики 
 Для просмотра групповых политик леса переходим:  
 > Tools->Groupe Policy Managment  
 
-![AD3_Policy1]()  
+![AD3_Policy1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD3_Policy1.png)  
 
 >[!NOTE]  
 Все домены подключаемы к Active Directory будут наследовать и применять дефолтную олитику с данного раздела (менять ее не рекомендуется)  
 
 Для добавления новой GPO (Групповойй политики), нажимаем ПКМ по доменному имени и выбираем первый пункт  
-![AD3_Policy2]()  
+![AD3_Policy2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD3_Policy2.png)  
 
 Как результат создается GPO (testGPO) применяемая ко всем контейнерам ниже  
-![AD3_Policy3]()    
+![AD3_Policy3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD3_Policy3.png)    
 
 ### 2.4 Создание в доменном контроллере организационные юниты  
 Переходим  
 >Tools->Active Directory Users And Computers  
 
 Во вкладке "доменные контроллеры" создаем контейнер, объединяющий собой определенный отдел (в данном случае просто работники)  
-![AD4_AddUnit1]()  
+![AD4_AddUnit1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD4_AddUnit1.png)  
 
 Добавляем работников  
-![AD4_AddUnit2]()  
+![AD4_AddUnit2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/AD4_AddUnit2.png)  
 
 
 
