@@ -222,26 +222,26 @@ gpedit.msc - вход в групповые политики устройств�
 - изменяем адрес предпочтительного DNS-сервера
 - заходим в "Свойства" моего компьютера  
 
-![2.5_SettingsWin10_0]()  
+![2.5_SettingsWin10_0](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/2.5_SettingsWin10_0.png)  
 
 - в сопутствующих параметрах выбираем "Переименование этого ПК"  
 
-![2.5_SettingsWin10_1]()  
+![2.5_SettingsWin10_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/2.5_SettingsWin10_1.png)  
 
 - изменяем имя и добавляем домен   
 
-![2.5_SettingsWin10_2]()  
+![2.5_SettingsWin10_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/2.5_SettingsWin10_2.png)  
 
 - вводим данные, кто имеет право добавить в домен (в нашем случае Administrator)  
 
-![2.5_SettingsWin10_3]()  
+![2.5_SettingsWin10_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/2.5_SettingsWin10_3.png)  
 
 >[!WARNING]  
 Best Practice: создать пользователя с правами на добавления машин в домен, чтобы администратор не светился в логах  
 
 - как результат видим сообщение  
 
-![2.5_SettingsWin10_4]() 
+![2.5_SettingsWin10_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_13/img/2.5_SettingsWin10_4.png) 
 
 
 
