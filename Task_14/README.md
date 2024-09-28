@@ -32,34 +32,34 @@
 ![UEFI_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
 
 - Запрет на использование флешь-накопителей  
-![UEFI_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![UEFI_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_4.jpg)  
 
 - Проверка работы чипа TPM  
-    В строке "Выполнить" задаем команду  
+В строке "Выполнить" задаем команду  
 > tpm.msc  
 
-    Переходим в окно настроек чипа TPM  
-![TPM_1]()  
+ Переходим в окно настроек чипа TPM  
+![TPM_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/TPM_1.png)  
 
-    Проверяем версию чипа, в нашем случае v2.0 
+Проверяем версию чипа, в нашем случае v2.0 
 
 ### 1.1.2 Изменение имени устройства в Kali Linux  
 - Для изменения имени устройства в Kali Linux необходимо отредактировать файл /etc/hostname, для этого используем команду  
 >hostname sethostname itminsk230198  
 
-![hostname_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)
+![hostname_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/hostname_1.png)
 
 Также необходимо для избежания ошибок отредактировать файл /etc/hosts  
-![hostname_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg) 
+![hostname_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/hostname_2.png) 
 
 - Для изменения имени root необходимо заменить название root в двух файлах  
 > /etc/passwd
 
-![root_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![root_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/root_1.png)  
 
 > /etc/shadow  
 
-![root_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![root_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/root_2.png)  
 
 ### 1.1.3 Настройка парольной политики  
 - Устанавливаем модуль Crack PAM  
@@ -76,20 +76,20 @@ lcredit=-1 (минимум одна строчная буква)
 dcredit=-1 
 ocredit=-1  
 
-![passwd_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![passwd_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/passwd_1.png)  
 
 - Установка даты истечения пароля 
 >sudo vim /etc/login.defs  
 
-![passwd_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![passwd_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/passwd_2.png)  
 
 ## 1.2 Настройка iptables  
 - разрешить все соединения по 80 и 443 порту  
 - разрешить подключение к 22 порту только из внутренней сети  
 Скриншот скрипта:  
-![iptables_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![iptables_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/iptables_1.png)  
 Результат работы скрипта:  
-![iptables_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![iptables_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/iptables_2.png)  
 
 ### 1.3 Очистка правил iptables и установка UFM firewall
 - Для очистки **всех** правил iptables используем следующую команду  
@@ -107,7 +107,7 @@ sudo ufw allow from 10.10.0.0/24 proto tcp to any port 22
 sudo ufw allow http  
 sudo ufw allow proto tcp from any to any port 80,443  
 
-![ufw_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![ufw_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/ufw_1.png)  
 
 - После добавления правил в UFW firewall перезагружаем службу  
 >sudo ufw reload  
@@ -115,10 +115,10 @@ sudo ufw allow proto tcp from any to any port 80,443
 - Проверяем правила добавленные в UFW firewall  
 >sudo ufw status verbose  
 
-![ufw_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![ufw_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/ufw_2.png)  
 
 - Проверяем правила для iptables после настройки UFW firewall и убеждаемся в применении данных правил   
-![iptablesAfterUfw](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/UEFI_3.jpg)  
+![iptablesAfterUfw](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/iptablesAfterUfw.png)  
 
 
 
