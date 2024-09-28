@@ -118,6 +118,7 @@ sudo ufw allow proto tcp from any to any port 80,443
 ![ufw_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/ufw_2.png)  
 
 - Проверяем правила для iptables после настройки UFW firewall и убеждаемся в применении данных правил   
+
 ![iptablesAfterUfw](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_14/img/iptablesAfterUfw.png)  
 
 
