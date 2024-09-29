@@ -22,43 +22,43 @@
 ## 1) Поднять контроллер домена в отдельной подсети  
 ### 1.1 Установка DHCP сервера в AD с раздачей настроек IP и DNS  
 Для назначения роли DHCP сервера домену AD переходим во вкладку **Manage** и выбираем **Add Roles and Features**   
-![DHCP_1]()
+![DHCP_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_1.png)
 
 В открывшемся окне выбираем **DHCP Server**  
-![DHCP_2]()  
+![DHCP_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_2.png)  
 
 После установки DHCP сервера нажимаем на флажок и выбираем **Complete DHCP configuration**  
-![DHCP_3]()  
+![DHCP_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_3.png)  
 
 После установки DHCP сервера необходимо добавить пул адресов для раздачи, для этого во вкладке "Выполнить" (Win+R) вводим следующую команду:  
 >dhcpmgmt.msc  
 
 Как результат будет открыто окно управления настнойками DHCP сервера  
-![DHCP_4]()  
+![DHCP_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_4.png)  
 
 Для разворачивания DHCP сервера в IPv4 щелкаем на ПКМ и выбираем **New Scope...**  
-![DHCP_5]()  
+![DHCP_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_5.png)  
 
 В открывшемся окне указываем название DHCP области  
-![DHCP_6]()  
+![DHCP_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_6.png)  
 
 Указываем пул адресов, а также маску посети  
-![DHCP_7]()  
+![DHCP_7](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_7.png)  
 
 В следующем окне указываются запрещенные адреса для раздачи (установлены небыли). 
 Далее указываем длительность аренды IP адреса (по умолчанию оставляем 8 дней)  
-![DHCP_8]()  
+![DHCP_8](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_8.png)  
 
 Указываем IP адрес шлюза клиентам  
-![DHCP_9]()  
+![DHCP_9](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_9.png)  
 
 Указываем имя домена и адреса DHCP серверов (оставляем по уммолчанию)  
-![DHCP_10]()  
+![DHCP_10](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_10.png)  
 
 ### 1.2 Проверка получения DHCP адреса на ВМ Win10  
 Для получения IP адреса по DHCP в настройках сетевого адаптера отключаем статический адрес IPv4 и ставим получение адреса по DHCP.  
 Проверяем в консоли IPv4 машины, а также пинг с DHCP сервером  
-![DHCP_11]()  
+![DHCP_11](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/DHCP_11.png)  
 
 ### 1.3 Добавление в домен  
 Ранее в **Task 13** ВМ Win10 была добавлена в домен **sicorsky.local**  
@@ -70,38 +70,43 @@
 >Tools->Active Directory Users and Computers 
 
 В открывшемся окне во вкладке переходим во вкладку доменные контроллеры и создаем два контейнера: fin и hr  
-![GPO_1]()  
+![GPO_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/GPO_1.png)  
 
 Добавляем по два пользователя (Fin1, Fin2, hr1, hr2) в соответствующие контейнеры  
-![GPO_2]()  
+![GPO_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/GPO_2.png)  
 
 ### 2.2 Создание fin_gpo  
 Для создания групповой политики fin_gpo переходим:
 >Tools->Group Policy Managment
 
 В открывшемся окне выбираем **Domain controllers**, нажимаем ПКМ по вкладке fin и выбираем **"Create GPO in this domain"** с именем **fin_gpo**  
-![GPO_3]()  
+![GPO_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/GPO_3.png)  
 
 После создания политики кликаем по ней ПКМ и выбираем **Edit**   
-![GPO_4]()  
+![GPO_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/GPO_4.png)  
 
 В открывшемся окне переходим:
 >Computer Configuration->Policies->Windows Settings->Security Settings->Account Policies->Password Policy  
 
 Ставим заданные значения парольной политики для организационных юнитов fin   
-![GPO_5]()  
+![GPO_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/GPO_5.png)  
 
 ### 2.3 Создание hr_gpo  
 Повторяем действия перечисленные в пункте выше, ставя соответствующие параметры  
-![GPO_6]()  
+![GPO_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/GPO_6.png)  
 
 Настройка блокировки экрана происходит в **Account Lockout Policy**   
-![GPO_7]()   
+![GPO_7](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/GPO_7.png)   
 
 
 ### 2.4 Проверка применения GPO на ВМ Win10   
 Вход в систему Win10 осуществляем под пользователем Fin1  
-![GoWin10_1]()   
+![GoWin10_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/GoWin10_1.png)   
+
+Проверка примененных групповых политик командой gpresult /r  
+![GoWin10_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_15_16/img/GoWin10_2.png)  
+
+
 
 
 
