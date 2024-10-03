@@ -63,9 +63,25 @@
 ### 1.4 Определяем пользователя, под которым запустили контейнер  
 Используем команду внутри оболочки контейнера **whoami** - пользователь root  
 
-![docker_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_17/img/docker_5.png)  
+![docker_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_17/img/docker_5.png) 
 
-### 1.5 Сканирование образа с помощью инструмента **trivy**  
+### 1.5 Запуск контейнера под пользователем tms  
+- Заходим в контейнер под оболочкой bash и добавляем пользователя **tms**  
+>useradd tms  
+
+![tms_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_17/img/tms_1.png)  
+
+- Коммитим изменения создавая новый образ ubuntu-tms  
+>docker commit cac610892a39 ubuntu-tms  
+
+![tms_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_17/img/tms_2.png)  
+
+- Запускаем новый образ под пользователем tms, проверяем командой whoami      
+>docker run -it --name home2 --user tms ubuntu-tms  
+
+![tms_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_17/img/tms_3.png)  
+
+### 1.6 Сканирование образа с помощью инструмента **trivy**  
 - Устанавливаем инструмент  
 >sudo apt install trivy  
 
