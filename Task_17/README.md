@@ -48,6 +48,7 @@
 
 Отображаем все скаченные образы docker  
 >docker image ls  
+
 ![docker_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/docker_3.png)  
 
 Добавление пользователя в группу docker было осуществлено ранее (Task 7) командой  
@@ -61,6 +62,7 @@
 
 ### 1.4 Определяем пользователя, под которым запустили контейнер  
 Используем команду внутри оболочки контейнера **whoami** - пользователь root  
+
 ![docker_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/docker_5.png)  
 
 ### 1.5 Сканирование образа с помощью инструмента **trivy**  
@@ -79,6 +81,7 @@
 ### 2.1 Написание Dockerfile  
 - создаем папку в домашней дериктории **Docker**  
 - создаем и заполняем **Dockerfile** (за основу берем Ubuntu:22.04, открываем 80 порт на докере, апгрэйдим систему и устанавливаем nginx)  
+
 ![ngnix_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/nginx_1.png)  
 
 - Собираем образ командой  
@@ -87,6 +90,7 @@
 ![ngnix_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/nginx_2.png)
 
 - Проверяем образ в списке образов  
+
 ![ngnix_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/nginx_3.png)  
 
 ### 2.2 Редактирование ngnix  
@@ -96,6 +100,7 @@
 ![ngnix_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/nginx_4.png)  
 
 - переходим в директорию **/var/www/html/** и редактируем html файл домашней nginx страницы  
+
 ![nginx_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/nginx_5.png)    
 
 - выходим командой **exec**  
@@ -110,6 +115,7 @@ docker commit 31dfc5f4f83b ubng-new
 ![nginx_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/nginx_6.png)  
 
 - Редактируем Dockerfile и собираем новый образ, на основе закомиченного  
+
 ![nginx_7](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/nginx_7.png)  
 
 ![nginx_8](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task17/img/nginx_8.png)  
