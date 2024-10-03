@@ -120,6 +120,7 @@ docker commit 31dfc5f4f83b ubng-new
 
 ![nginx_8](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_17/img/nginx_8.png)  
 
-- Запускаем новый контейнер и отображаем резуьтаты в браузере по запросу **localhost:8800**  
+- Запускаем новый контейнер и отображаем резуьтаты в браузере по запросу **localhost:8800**    
+
 ![nginx_9](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_17/img/nginx_9.png)  
 ![nginx_10](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_17/img/nginx_10.png)  
