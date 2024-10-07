@@ -16,12 +16,12 @@
 - Установка модуя Google authenticator PAM выполняем при помощи следующей команды  
 >sudo apt install libpam-google-authenticator  
 
-![GoogleA_1]()  
+![GoogleA_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_18/img/GoogleA_1.png)  
 
 - Редактируем файл /etc/pam.d/sshd путем добавления в него строки  
 >auth required pam_google_authenticator.so
 
-![GoogleA_2]()  
+![GoogleA_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_18/img/GoogleA_2.png)  
 
 - Выполняем перезагрузку службы sshd  
 >sudo systemctl restart sshd.conf  
@@ -29,7 +29,7 @@
 - Редактируем файл /etc/ssh/sshd_conf путем добавления в него строки  
 >KbInteractiveAuthentication yes  
 
-![GoogleA_3]()  
+![GoogleA_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_18/img/GoogleA_3.png)  
 
 - Выполняем перезагрузку службы sshd  
 >sudo systemctl restart sshd.conf  
@@ -37,7 +37,7 @@
 - Настраиваем аутентификацию, прописываем команду  
 >google-authenticator  
 
-![GoogleA_4]()  
+![GoogleA_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_18/img/GoogleA_4.png)  
 
 - Отвечаем на вопросы google-authenticator  
     Сделать токены аутентификации привязанными по времени (да / нет): y  
@@ -46,11 +46,11 @@
     Увеличить частоту генерации кода (y / n):  n    
     Включить ограничение скорости (да / нет): y  
 
-![GoogleA_5]()  
+![GoogleA_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_18/img/GoogleA_5.png)  
 
 - Устанавливаем приложение **Google Authenticator** на смартфон и подключаем устройство по QR-коду (либо по коду ниже)  
 
-![GoogleA_6]()  
+![GoogleA_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_18/img/GoogleA_6.png)  
 
 ## 2) any.run 
 Ввиду отсутствия корпоративной почти, изучение не было выполнено
