@@ -12,3 +12,45 @@
 - [Примеры различных Honeypot](https://habr.com/ru/companies/bastion/articles/731172/)  
 - [Как повысить привилегии LotL attack and GFtoBINS](https://habr.com/ru/companies/oleg-bunin/articles/799773/)  
 
+## 1) Установка 2FA (Google authenticator) на KaliLinux  
+- Установка модуя Google authenticator PAM выполняем при помощи следующей команды  
+>sudo apt install libpam-google-authenticator  
+
+![GoogleA_1]()  
+
+- Редактируем файл /etc/pam.d/sshd путем добавления в него строки  
+>auth required pam_google_authenticator.so
+
+![GoogleA_2]()  
+
+- Выполняем перезагрузку службы sshd  
+>sudo systemctl restart sshd.conf  
+
+- Редактируем файл /etc/ssh/sshd_conf путем добавления в него строки  
+>KbInteractiveAuthentication yes  
+
+![GoogleA_3]()  
+
+- Выполняем перезагрузку службы sshd  
+>sudo systemctl restart sshd.conf  
+
+- Настраиваем аутентификацию, прописываем команду  
+>google-authenticator  
+
+![GoogleA_4]()  
+
+- Отвечаем на вопросы google-authenticator  
+    Сделать токены аутентификации привязанными по времени (да / нет): y  
+    Обновить файл » ~ / .google_authenticator » (y / n): y  
+    Запретить многократное использование одного и того же токена аутентификации ?: y  
+    Увеличить частоту генерации кода (y / n):  n    
+    Включить ограничение скорости (да / нет): y  
+
+![GoogleA_5]()  
+
+- Устанавливаем приложение **Google Authenticator** на смартфон и подключаем устройство по QR-коду (либо по коду ниже)  
+
+![GoogleA_6]()  
+
+## 2) any.run 
+Ввиду отсутствия корпоративной почти, изучение не было выполнено
