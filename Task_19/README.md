@@ -32,7 +32,7 @@ sudo systemctl start clamav-freshclam
 
 ![Warning_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Warning_1.png)  
 
->[WARNING]
+>![WARNING]
 Как видно базы обновлены не были из за ошибки 403 и 429  
 403 - стандартный код ответа HTTP, означающий, что доступ к запрошенному ресурсу запрещен.  
 429 - пользователь отправлял чересчур много запросов за единицу времени. 
@@ -79,4 +79,39 @@ sudo systemctl start clamav-freshclam
 ![ClamAV_10](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_10.png)  
 
 ## 2) Установка YARA  
+
+>![NOTE]
+YARA - утилита позволяющая выполнять сигнатурный анализ на основе YARA описаний (правил). В них содер­жатся инди­като­ры ком­про­мета­ции для раз­ных типов вре­донос­ного ПО  
+
+### 2.1 Установка YARA  
+- Установка выполняется следующей командой  
+>sudo apt install yara  
+
+![Yara_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Yara_1.png)  
+
+### 2.2 Вычисления хэш суммы файла   
+- Для вычисления хэш суммы используют название соответсвующей хэш-функции, для примера был вычеслен хэш SHA256 и MD5 скрипта script1.sh  
+>sha256sum script1.sh    
+md5sum script1.sh  
+
+![Yara_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Yara_2.png)  
+
+### 2.3 Написания правила YARA для детектирования файла по хэш функции
+- Создаем правило, при этом расширение ставим **.yar**  
+
+Правило YARA начинается с **rule** за которым следует его название, далее сами правила описываются в **"{}"**.  
+
+Первым блоком следуют метаданные в которых описывается различная полезная информация (автор, дата создания, версия и т.д.)  
+
+Вторым блоком описываются переменные, найденные во вредоносном файле (в нашем случае хэш файла)  
+
+Третий блок представляет собой условия, необхоимые для срабатывания правила  
+
+- В нашем случае при написании правила используем специальную функцию hash.md5(0, filesize) для срабатывания правила по хэшу файла  
+
+![Yara_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Yara_4.png):
+
+- Результат, обнаружение вредоносного файла  
+
+![Yara_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Yara_5.png);  
 
