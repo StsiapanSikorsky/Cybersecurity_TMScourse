@@ -38,7 +38,7 @@ sudo systemctl start clamav-freshclam
 429 - пользователь отправлял чересчур много запросов за единицу времени. 
 
 При заходе на официальный сайт [https://www.clamav.net/downloads](https://www.clamav.net/downloads) без подключения VPN, он блокируется  
-![Warning_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Warning_2.png)
+[!Warning_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Warning_2.png)
 
 - Сканирование файла
 >clamscan dict.txt  
@@ -80,7 +80,7 @@ sudo systemctl start clamav-freshclam
 
 ## 2) Установка YARA  
 
->![NOTE]
+>[!NOTE]
 YARA - утилита позволяющая выполнять сигнатурный анализ на основе YARA описаний (правил). В них содер­жатся инди­като­ры ком­про­мета­ции для раз­ных типов вре­донос­ного ПО  
 
 ### 2.1 Установка YARA  
