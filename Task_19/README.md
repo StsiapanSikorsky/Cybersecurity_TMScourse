@@ -22,14 +22,14 @@
 - Для установки бесплатного антивируса ClamAV на ВМ KaliLinux прописываем следующую команду  
 >sudo apt install clamav clamav-daemon  
 
-![ClamAV_1]()
+![ClamAV_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_1.png)
 
 - Настраиваем автоматическое обновление баз антивируса
 >sudo systemctl stop clamav-freshclam  
 sudo freshclam  
 sudo systemctl start clamav-freshclam  
 
-![Warning_1]()  
+![Warning_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Warning_1.png)  
 
 >[WARNING]
 Как видно базы обновлены не были из за ошибки 403 и 429  
@@ -37,11 +37,11 @@ sudo systemctl start clamav-freshclam
 429 - пользователь отправлял чересчур много запросов за единицу времени. 
 
 При заходе на официальный сайт [https://www.clamav.net/downloads](https://www.clamav.net/downloads) без подключения VPN, он блокируется  
-![Warning_2]()
+![Warning_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Warning_2.png)
 
 - Сканирование файла
 >clamscan dict.txt  
 
-![ClamAV_3]()  
+![ClamAV_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_3.png)  
 
 - Сканирование не удалось, из за отсутствия баз данных.
