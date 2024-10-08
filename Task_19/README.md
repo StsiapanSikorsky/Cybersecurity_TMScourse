@@ -19,6 +19,7 @@
 - [NGFW free course](https://www.youtube.com/watch?v=uOMiC1-iwIc&list=PLqio-3dnMW5_2cStMfIezwcAzzDCjX86C)  
 
 ## 1) Установить антивирус ClamAV  
+### 1.1 Установка и сканирование при помощи консоли
 - Для установки бесплатного антивируса ClamAV на ВМ KaliLinux прописываем следующую команду  
 >sudo apt install clamav clamav-daemon  
 
@@ -45,3 +46,37 @@ sudo systemctl start clamav-freshclam
 ![ClamAV_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_3.png)  
 
 - Сканирование не удалось, из за отсутствия баз данных.
+
+- Опытным путем проб и ошибок был удален файл freshclam.dat из директории **/var/lib/clamav**, после чего была выполнена корректно выполненная команда **freshclam** (с подключенным VPN) 
+
+![ClamAV_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_4.png)  
+
+- В результате выполнено сканирование файла  
+>clamscan файл  
+
+![ClamAV_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_5.png)
+
+- Сканирование директории  
+>clamscan директория  
+
+![ClamAV_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_6.png)  
+
+### 1.2 Установка и сканирование при помощи GUI   
+- Установка выполняется при помощи команды  
+>sudo apt install clamtk  
+
+![ClamAV_7](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_7.png)  
+
+Главное окно программы ClamTk  
+![ClamAV_8](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_8.png)  
+
+- Сканирование файла ClamTk  
+
+![ClamAV_9](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_9.png)  
+
+- Сканирование директории с утилитой xerxes  
+
+![ClamAV_10](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/ClamAV_10.png)  
+
+## 2) Установка YARA  
+
