@@ -32,13 +32,13 @@ sudo systemctl start clamav-freshclam
 
 ![Warning_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Warning_1.png)  
 
->![WARNING]
+>[!WARNING]
 Как видно базы обновлены не были из за ошибки 403 и 429  
 403 - стандартный код ответа HTTP, означающий, что доступ к запрошенному ресурсу запрещен.  
 429 - пользователь отправлял чересчур много запросов за единицу времени. 
 
 При заходе на официальный сайт [https://www.clamav.net/downloads](https://www.clamav.net/downloads) без подключения VPN, он блокируется  
-[!Warning_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Warning_2.png)
+![Warning_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_19/img/Warning_2.png)
 
 - Сканирование файла
 >clamscan dict.txt  
