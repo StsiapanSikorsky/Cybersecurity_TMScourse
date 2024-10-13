@@ -22,20 +22,21 @@ Suricata - программный комплекс для сбора, аудит
 - Для установки **suricata** требуется выполнить команду:  
 >sudo apt install suricata  
 
-![Suricata_1]()  
+![Suricata_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_1.png)  
 
 - Добавляем программу в системный пул с автозапуском:  
 >systemctl enable suricata  
 
-![Suricata_2]()  
+![Suricata_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_2.png)  
 
 - Редактирование правил **suricata** происходит в конфигурационном **suricata.yaml** файле находящемуся по пути: /etc/suricata  
-![Suricata_3]()  
+
+![Suricata_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_3.png)  
 
 - Список протоколов подлежащих проверке на уровне приложений можем получить используя команду:  
 >sudo suricata --list-app-layer-protos  
 
-![Suricata_4]()  
+![Suricata_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_4.png)  
 
 
 
@@ -44,32 +45,32 @@ Suricata - программный комплекс для сбора, аудит
 >systemctl restart suricata  
 systemctl status suricata  
 
-![Suricata_5]()  
+![Suricata_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_5.png)  
 
 
 ## 1.3 Предварительная настройка и сканирование KaliLinux   
 - Перед начаом скнирования обновляем файлы **suricata**:  
 >sudo suricata-update  
 
-![Suricata_6]()  
+![Suricata_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_6.png)  
 
 - Проверяем суриката в режиме тестирования (если всё впорядке, получаем только сообщение о версии):
 >sudo suricata -Tc /etc/suricata/suricata.yaml  
 
-![Suricata_7]()  
+![Suricata_7](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_7.png)  
 
 - Запускаем **suricata** в режиме IDS:   
 >sudo suricata -c /etc/suricata/suricata.yaml -i eth0  
 
-![Suricata_8]()  
+![Suricata_8](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_8.png)  
 
 - Для запуска **suricata** в режиме IPS:  
 >sudo suricata -c /etc/suricata/suricata.yaml --af-packet -D  
 
 - Файлы логов находятся в дериктории **/var/log/suricata/**  
 
-![Suricata_9]()  
+![Suricata_9](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_9.png)  
 
-![Suricata_10]()  
+![Suricata_10](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_20/img/Suricata_10.png)  
 
 
