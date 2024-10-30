@@ -25,20 +25,20 @@
 
 >sudo apt install openvas -y  
 
-![OpenVAS_1]()  
+![OpenVAS_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_1.png)  
 
 - Проверям и запускаем службу **Redis**, скаченную вместе с OpenVAS:  
 
 >sudo systemctl status redis-server@openvas.service  
 sudo systemctl enable redis-server@openvas.service
 
-![OpenVAS_2]()  
+![OpenVAS_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_2.png)  
 
 - Запускаем настройки **gvm**, необходимого для создания пользователя OpenVAS
 
 >sudo gvm-setup  
 
-![OpenVAS_3]()  
+![OpenVAS_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_3.png)  
 
 >[!CAUTION] При создании обязательно запомнаем сгенерированный пароль для пользователя **admin**, в нашем случае: 89305172-46f7-4058-a4cf-5fd76177ecf9
 
@@ -46,7 +46,7 @@ sudo systemctl enable redis-server@openvas.service
 
 >sudo gvm-check-setup  
 
-![OpenVAS_4]()  
+![OpenVAS_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_4.png)  
 
 - Обновляем каналы:  
 
@@ -58,11 +58,11 @@ sudo systemctl enable redis-server@openvas.service
 sudo ospd-openvas  
 sudo gvm-start
 
-![OpenVAS_5]() 
+![OpenVAS_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_5.png) 
 
-- Вводим ранее сгенерированный пароль и логин admin, проваливаемся в сканнер  
+- Вводим ранее сгенерированный пароль и логин admin, проваливаемся в GUI  
 
-![OpenVAS_6]()  
+![OpenVAS_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_6.png)  
 
 ### 1.2 Сканирование системы при помощи OpenVAS  
 
