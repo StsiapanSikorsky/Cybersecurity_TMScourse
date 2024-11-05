@@ -67,20 +67,20 @@ sudo gvm-start
 ### 1.2 Сканирование системы при помощи OpenVAS  
 Сканирование можно выполнять как в интерактивном режиме  
 
-![OpenVAS_7]()  
+![OpenVAS_7](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_7.png)  
 
 Так и при помощи своего созданного задания  
 
-![OpenVAS_8]()  
+![OpenVAS_8](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_8.png)  
 
 Результаты сканирования выполненые в интерактивном режиме 
 >Scans->Reports->ЛКМ на ссылку в поле Task->Repult for Task (значок сверху)
 
-![OpenVAS_9]()  
+![OpenVAS_9](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_9.png)  
 
 ### 1.3 Поиск устранения найденной уязвимости SSL/TLS: Report Weak Clier Suites
 
-![OpenVAS_10]() 
+![OpenVAS_10](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenVAS_10.png) 
 
 - CVE-2015-4000 (уязвимость обмена ключами DH)  
 решение:  
