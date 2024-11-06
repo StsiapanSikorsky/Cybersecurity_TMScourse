@@ -19,7 +19,7 @@
 - [PatrOwl установка](https://github.com/Patrowl/PatrowlDocs/blob/master/installation/installation-guide.md)  
 - [Greenbone VM](https://www.greenbone.net/en/greenbone-free/)    
 
-## Сканнер уязвимостей OpenVAS  
+## 1) Сканнер уязвимостей OpenVAS  
 ### 1.1 Установка OpenVAS  
 - Для установки выполняем команду:
 
@@ -118,7 +118,19 @@ TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
 
 
 
+## 2) Регистрация и отслеживание актуальных уязвимостей на сайте [opencve.io](https://app.opencve.io/)  
+- Для регистрации необходимо лишь ввести почту, юзернэйм и ввести пароль, после чего требуется подтверждение почты  
+- После завершения процесса регистрации создаем пользователя, а также проект (появляется в разделе projects)  
 
+![OpenCVE_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenCVE_1.png)
+
+- В разделе Vendors & Products ищем и выбираем интересующие нас разделы и добавляем их в проект  
+
+![OpenCVE_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenCVE_2.png)  
+
+- В Dashbord можем найти актуальные новости уязвимостей по подписанным сервисам  
+
+![OpenCVE_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenCVE_3.png) 
 
 
 
