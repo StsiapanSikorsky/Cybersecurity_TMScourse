@@ -132,7 +132,52 @@ TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
 
 ![OpenCVE_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/OpenCVE_3.png) 
 
+## 2) PatrOwl  
+PatrOwl - бесплатное, масштабируемое, открытое решение для оркестровки операций безопаности (сканирование, поиск, вызовы API).  
 
+### 2.1 Установка PatrOwl  
 
+Выполняем перечень команд:  
+1) Загрузка PatrOwl с github  
+>git clone https://github.com/Patrowl/PatrowlManager.git  
 
+2) Развертываем back-end при помощи docker  
+>cd PatrowlManager  
+docker-compose build --force-rm  
+docker-compose up  
+
+При завершении переходим в браузер на http://localhosst:8083 и вводим учетные данные:  
+Логин: admin  
+Пароль: Bonjour1!  
+
+![PatrOwl_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/PatrOwl_1.png)  
+
+Главное окно Frontend PatrOwl  
+
+![Patrowl_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/Patrowl_2.png)  
+
+### 2.2 Функционал PatrOwl  
+Для добавления актива следует в хэдере перейти во вкладку Assets и выбрать Add new asset  
+
+![PatrOwl_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/PatrOwl_3.png)  
+
+В открывшемся окне выбираем нужные нам параметры  
+
+![PatrOwl_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/PatrOwl_4.png)  
+
+Для добавления движка следует в хэдере перейти во вкладку Engines и выбрать Add scan engine instance  
+
+![PatrOwl_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/PatrOwl_5.png)  
+
+В открывшемся окне выбирраем нужные параметры  
+
+![PatrOwl_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/PatrOwl_6.png)  
+
+Для добавления сканера следует в хэдере перейти во вкладку Scans и выбрать Add new scan  
+
+![PatrOwl_7](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/PatrOwl_7.png)  
+
+В открывшемся окне выбирраем нужные параметры (задаем созданный актив, выбираем созданный движок на основе NMAP)  
+
+![PatrOwl_8](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_22/img/PatrOwl_8.png)  
 
