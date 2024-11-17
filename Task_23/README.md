@@ -29,7 +29,7 @@ ip.addr == 10.1.30.46 - поиск по IP адресу
 tcp.port == 80 - поиск по порту  
 
 Отчет о выполненой работе  
-![Lab_1]()  
+![Lab_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_23/img/Lab_1.png)  
 
 
 ### 1.2 ЛР2 - Yellow RAT lab  
@@ -41,14 +41,14 @@ tcp.port == 80 - поиск по порту
 - поиск С2 сервера, на каторый вредонос отправляет данные  
 
 Отчет о выполненной работе  
-![Lab_2]()  
+![Lab_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_23/img/Lab_2.png)  
 
 ## 2) Установка EFK в через docker-compose  
 - Создаем директорию efk в к котором будут распологаться файлы  
 
 >mkdir efk  
 
-- В директории создаем файл docker-compose.yml и заполняем его как указано на скриншоте  
+- В директории создаем файл docker-compose.yml и заполняем его как указано ниже  
 
 ```
     services:
@@ -92,32 +92,62 @@ tcp.port == 80 - поиск по порту
       - "5601:5601"
 ```
 
-![EFK_1]()  
-
-- Создаем директорию fluentd и вней Dockerfile, заполняем его как на скриншоте  
+- Создаем директорию fluentd и вней Dockerfile, заполняем его как указано ниже  
 
 >mkdir fluentd  
 cd fluentd  
 vim Dockerfile  
 
-![EFK_2]()  
+```
+# fluentd/Dockerfile
+FROM fluent/fluentd:v1.17.0-debian-1.0
+USER root
+RUN ["gem", "install", "fluent-plugin-elasticsearch", "--no-document", "--version", "5.0.3"]
+USER fluent 
+```
 
 - В директории fluentd создаем директорию conf в которо создаем и заполняем файл конфигурации fluentd.conf  
 
-![EFK_3]()  
+```
+<source>
+  @type forward
+  port 24224
+  bind 0.0.0.0
+</source>
 
+<match *.**>
+  @type copy
+
+  <store>
+    @type elasticsearch
+    host elasticsearch
+    port 9200
+    logstash_format true
+    logstash_prefix fluentd
+    logstash_dateformat %Y%m%d
+    include_tag_key true
+    type_name access_log
+    tag_key @log_name
+    flush_interval 1s
+  </store>
+
+  <store>
+    @type stdout
+  </store>
+</match>
+```
 
 - Возвращаемся в директорию etc и поднимам контейнер в режиме демона командой  
 
 >docker-compose up -d  
 
-![EFK_4]()  
+![EFK_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_23/img/EFK_4.png)  
 
 - Переходим по адресу **http://localhost:5601**  
 
-![EFK_5]()  
+![EFK_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_23/img/EFK_5.png)  
 
-![EFK_6]()  
+![EFK_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_23/img/EFK_6.png)  
 
 
 
