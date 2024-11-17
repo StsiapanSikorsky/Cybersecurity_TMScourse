@@ -43,5 +43,82 @@ tcp.port == 80 - поиск по порту
 Отчет о выполненной работе  
 ![Lab_2]()  
 
+## 2) Установка EFK в через docker-compose  
+- Создаем директорию efk в к котором будут распологаться файлы  
+
+>mkdir efk  
+
+- В директории создаем файл docker-compose.yml и заполняем его как указано на скриншоте  
+
+    services:
+  web:
+    image: httpd
+    ports:
+      - "80:80"
+    links:
+      - fluentd
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: localhost:24224
+        tag: httpd.access
+
+  fluentd:
+    build: ./fluentd
+    volumes:
+      - ./fluentd/conf:/fluentd/etc
+    links:
+      - "elasticsearch"
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp"
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.13.1
+    container_name: elasticsearch
+    environment:
+      - "discovery.type=single-node"
+    expose:
+      - "9200"
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.13.1
+    links:
+      - "elasticsearch"
+    ports:
+      - "5601:5601"
+
+![EFK_1]()  
+
+- Создаем директорию fluentd и вней Dockerfile, заполняем его как на скриншоте  
+
+>mkdir fluentd  
+cd fluentd  
+vim Dockerfile  
+
+![EFK_2]()  
+
+- В директории fluentd создаем директорию conf в которо создаем и заполняем файл конфигурации fluentd.conf  
+
+![EFK_3]()  
+
+
+- Возвращаемся в директорию etc и поднимам контейнер в режиме демона командой  
+
+>docker-compose up -d  
+
+![EFK_4]()  
+
+- Переходим по адресу **http://localhost:5601**  
+
+![EFK_5]()  
+
+![EFK_6]()  
+
+
+
+
 
 
