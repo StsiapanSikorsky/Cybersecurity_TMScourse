@@ -90,6 +90,7 @@ tcp.port == 80 - поиск по порту
       - "elasticsearch"
     ports:
       - "5601:5601"
+```
 
 ![EFK_1]()  
 
