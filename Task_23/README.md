@@ -50,6 +50,7 @@ tcp.port == 80 - поиск по порту
 
 - В директории создаем файл docker-compose.yml и заполняем его как указано на скриншоте  
 
+```
     services:
   web:
     image: httpd
