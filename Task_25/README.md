@@ -59,7 +59,7 @@ sudo avml kali_dump.dmp
 ``` 
 
 - результат в корневой директории сохраняется файл снятого дампа:  
-![AVML_1]()  
+![AVML_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_25/img/AVML_1.png)  
 
 ### 3.3 просмотр дампа памяти при помощи Volatility  
 - проверяем какое в системе ядро следующей командой:  
@@ -67,7 +67,7 @@ sudo avml kali_dump.dmp
 ```   
 uname -a    
 ```   
-![AVML_2]()  
+![AVML_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_25/img/AVML_2.png)  
 
 - используем volatility для оработки дампа kali_dump.dmp  
 - выводим перечень доступных команд в volatility  
@@ -75,13 +75,13 @@ uname -a
 ``` 
 sudo python3 vol.py -f ~/kali_dump.dmp a  
 ``` 
-![AVML_3]()  
+![AVML_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_25/img/AVML_3.png)  
 
 - применяем команду banners.Banners  
 ```   
 sudo python3 vol.py -f ~/kali_dump.dmp banners.Banners  
 ``` 
-![AVML_4]()  
+![AVML_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_25/img/AVML_4.png)  
 
 
 
