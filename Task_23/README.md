@@ -150,7 +150,8 @@ USER fluent
 ![EFK_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_23/img/EFK_6.png)  
 
 
-
+## 3) Установка Wazuch при помощи docker-compose  
+>[!NOTE] Wazuch - OpenSource SIEM система предназначенная для обеспечения кибербезопасности, обеспечивает функцию обнаружения вторжений и управление ИБ (логирование и т.д.)
 
 
 
