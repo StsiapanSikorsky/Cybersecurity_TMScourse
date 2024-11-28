@@ -53,4 +53,4 @@ echo -e "$GREEN VPN-connect is complete
 
 - Результат выполнеия скрипта (установление VPN соединения)  
 
-![BASH_1]()
+![BASH_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_26/img/BASH_1.png)
