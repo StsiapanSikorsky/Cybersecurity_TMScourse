@@ -53,4 +53,100 @@ echo -e "$GREEN VPN-connect is complete
 
 - Результат выполнеия скрипта (установление VPN соединения)  
 
-![BASH_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_26/img/BASH_1.png)
+![BASH_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_26/img/BASH_1.png)  
+
+## 2) Написать PowerShell-script  
+### 2.1) Изучение PowerShell
+
+Командлет - команды, встроенные в PowerShell. Имеют систему наименования **Глагол-Объект**    
+
+- Список папок в текущем каталоге  (3 варианта)  
+``` powershell
+dir  
+```   
+
+``` powershell
+ls  
+```   
+
+``` powershell
+Get-ChildItem
+```   
+
+- Вывести список всех алиасов  
+``` powershell
+ls Alias:\
+```   
+
+- Получить список процессов  
+``` powershell
+Get-Process
+```   
+
+- Удаление чего либо  
+``` powershell
+Remove-Item  
+```   
+
+- Получение справки  
+``` powershell
+Get-Help  
+get-help files
+get-help new-item -Examples
+```   
+
+``` powershell
+Get-ChildItem
+```   
+
+- Создание нового алиаса  
+``` powershell
+Set-Alias  
+```   
+
+- Создать овый объект (файли и т п)  
+``` powershell
+New-Item  
+```   
+
+- Просмотр дисков системы  
+``` powershell
+Get-PSDrive  
+```   
+
+- Хождение по системе (аналог cd)  
+``` powershell
+Set-Location D:\Program....  
+```   
+
+- Вывод списка файлов с определенным расширением (+ | вывод данных файла)    
+``` powershell
+ls -filter "*jpg" | Get-Content
+```   
+- Список процессов, запущенных в системе  
+``` powershell
+ps  
+```   
+
+- Создание переменной и получение ей данных сервера  
+``` powershell
+$value.DownloadString("http://google.com")  
+```   
+
+- Вывод в консоль (вторая команда по конвееру)
+``` powershell
+Write-Host "Hello"  
+Write-Output "Hello for conveer"  
+```   
+
+### 2.2) Скрипты на PowerShell
+
+- Пример скрипта по выводу места на ЖД компьютера  
+``` powershell
+Get-WmiObject -Class Win32_LogicalDisk | 
+Select-Object -Property DeviceID, VolumeName, @{Label='FreeSpace (Gb)'; expression={($_.FreeSpace/1GB).ToString('F2')}},
+@{Label='Total (Gb)'; expression={($_.Size/1GB).ToString('F2')}},
+@{label='FreePercent'; expression={[Math]::Round(($_.freespace / $_.size) * 100, 2)}}|ft
+```  
+
+![PowerShell_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_26/img/Powershell_1.png)  
