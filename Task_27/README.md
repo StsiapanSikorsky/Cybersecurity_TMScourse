@@ -9,6 +9,36 @@
 - [Создание symbo table для кастомных ядер](https://blog.tofile.dev/2022/08/22/cloud-forensics.html)  
 - [HTML5 templates](https://html5up.net/)  
 
+## 1) Python-script для парсинга сайта погоды  
+
+Перед началом, на сайте погоды, необходимо найти часть, которая хранит значения погоды в Минске. Через консоль разработчиа (F12) поэтапно разворачивая тэги находим нужный   
+![Py_1]()  
+
+После чего приступаем к написанию скрипта  
+
+```python
+#!/usr/bin/env python3
+
+#импорт библиотек
+from bs4 import BeautifulSoup
+import requests
+
+#адрес сайта который парсим
+url = 'https://yandex.by/pogoda/minsk?lat=53.902735&lon=27.555691'
+
+#проверка связи с сервером
+response = requests.get(url)
+print(response)
+
+#получение страницы в формате lxml
+bs = BeautifulSoup(response.text, "lxml")
+#print(bs)
+
+#поиск значения по тэгу и его классу
+temp = bs.find('span', 'temp__value temp__value_with-unit')
+print(temp.text)
+```
+
 ## 2) Действия скрипта PowerShell  
 ``` powershell
 IF ($PSVersionTABLE.PSversion.Major=ge3)  
