@@ -18,14 +18,14 @@
 ``` 
 sudo apt install ssdeep
 ```  
-![SSDEEP_1]()  
+![SSDEEP_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_28/img/SSDEEP_1.png)  
 
 - Создаем файл text.txt и записываем в него произвольный код:  
 ```   
 touch text.txt  
 vim text.txt  
 ``` 
-![SSDEEP_2]()  
+![SSDEEP_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_28/img/SSDEEP_2.png)  
 
 - Создаем файл bamboo.exe, копируем в него содержимое предыдущего файла и добовляем в конец "1"  
 ``` 
@@ -38,7 +38,8 @@ echo "1" >> bamboo.exe
 ssdeep text.txt  
 ssdeep bamboo.exe  
 ``` 
-![SSDEEP_3]()  
+![SSDEEP_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_28/img/SSDEEP_3.png)  
 
 - При удалении символа "1" из файла bamboo.exe и сравнении их хэшей, они являются идентичными  
-![SSDEEP_4]()  
+
+![SSDEEP_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_28/img/SSDEEP_4.png)  
