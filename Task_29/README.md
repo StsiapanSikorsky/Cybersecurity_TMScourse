@@ -59,5 +59,5 @@
 echo "запись в формате base64" | base64 --decode  
 ```
 
-![base64_1]()  
+![base64_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_29/img/base64_1.png)   
 
