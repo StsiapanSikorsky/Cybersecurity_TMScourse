@@ -13,26 +13,26 @@
 ## 2) Работа с GitLab  
 ### 2.1) Создание аккаунта    
 
-[GitLab_1]()  
+[GitLab_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_31_32/img/GitLab_1.png)  
 
 ### 2.2) Создание нового проекта  
 Для создания нового проекта следует перейти на вкладку поиска и далее **Viev all my projects**  
 
-[GitLab_2]()  
+[GitLab_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_31_32/img/GitLab_2.png)  
 
 После чего в открывшимся окне станет доступна вкладка  **New Project**
 
-[GitLab_3]()  
+[GitLab_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_31_32/img/GitLab_3.png)  
 
 ### 2.3) Добавление файлов к существующему проекту, новой ветки
 Для добавления файла к существующему проекту необходимо нажать на знак **"+"** в папке с проектом  
 
-[GitLab_4]()  
+[GitLab_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_31_32/img/GitLab_4.png)  
 
 ## 2.4) Создание тестового pipeline с этапами DevSecOps  
 - Добавление файла **.gitlab-ci.yml, файл необходим для автоматизации CI\CD  
 
-[GitLab_5]()  
+[GitLab_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_31_32/img/GitLab_5.png)  
 
 ```yml
 #GitLab CI/CD pipeline DevSecOps
@@ -114,4 +114,4 @@ deploy_job2:
 
 - Послкольку для запуска pipeline в GitLab необходима верификация по номеру телефона, которая в данное время невозможна для пользователей РБ и РФ, смонтированный тестовый pipeline не выполняется.  
 
-![GitLab_6]()  
+![GitLab_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_31_32/img/GitLab_6.png)  
