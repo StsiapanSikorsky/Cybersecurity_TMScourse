@@ -110,7 +110,7 @@ sudo ./configure --with-compat --with-openssl=/usr/include/openssl/ --add-dynami
 ```  
 В ходе выполнения команды, должен создаться **Makefile**, содержащий в себе информацию, представленную на скриншоте
 
-![ModSecurity_2]()  
+![ModSecurity_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_30/img/ModSecurity_2.png)  
 
 - Создаем модуль ModSecuriy Nginx Connector и копируем его
 
@@ -127,7 +127,7 @@ sudo vim /etc/nginx/nginx.conf
 
 - В открытый файл добавляем следующие строки (в места как на скриншоте)  
 
-![ModSecurity_3]()  
+![ModSecurity_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_30/img/ModSecurity_3.png)  
 
 ```
 load_module modules/ngx_http_modsecurity_module.so;
@@ -145,9 +145,9 @@ sudo vim /etc/nginx/modsec/modsecurity.conf
 ```   
 
 Редактируем файл как указано на скриншотах  
-![ModSecurity_4]()  
-![ModSecurity_5]()  
-![ModSecurity_6]()  
+![ModSecurity_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_30/img/ModSecurity_4.png)  
+![ModSecurity_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_30/img/ModSecurity_5.png)  
+![ModSecurity_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_30/img/ModSecurity_6.png)  
 
 - Создаем файл main.conf  
 
@@ -173,7 +173,7 @@ sudo nginx -t
 ``` 
 
 Результат должен содержать сообщение об успешном прохождении теста  
-![ModSecurity_7]()  
+![ModSecurity_7](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_30/img/ModSecurity_7.png)  
 
 ## 2.2) Включение правил OWASP  
 
