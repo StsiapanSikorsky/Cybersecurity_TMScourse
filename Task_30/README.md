@@ -32,11 +32,14 @@
 sudo apt install nginx  
 ```  
 
-- Загружаем исходный пакет nginx  
+- Загружаем исходный пакет nginx и включаем репозиторий исходного кода   
 
 ```
 sudo chown kali:kali /usr/local/src/ -R
 mkdir -p /usr/local/src/nginx
+sudo apt install software-properties-common
+sudo apt-add-repository -ss
+обновление sudo apt
 ```
 - Переходим в исходный каталог nginx и загружаем исходный пакет  
 
@@ -89,6 +92,11 @@ git submodule update
 make -j2
 sudo make install
 ```  
+- Клонируем репозиторий ModSecurity nginx connector  
+
+```
+sudo ./configure --with-compat --with-openssl=/usr/include/openssl/ --add-dynamic-module=/usr/local/src/ModSecurity-nginx
+```
 
 - Переходим в исходный каталог nginx  
 
