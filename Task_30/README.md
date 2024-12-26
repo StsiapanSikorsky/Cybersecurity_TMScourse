@@ -25,3 +25,177 @@
 - [OWASP ASVS стандарт для безопасной разработки Web](https://habr.com/ru/companies/acribia/articles/519050/)    
 - [Xtreme Vulnerable Web Application (XVWA)](https://github.com/s4n7h0/xvwa)  
 
+## 2) Установка ModeSecurity и Nginx
+- Установка nginx  
+
+```
+sudo apt install nginx  
+```  
+
+- Загружаем исходный пакет nginx  
+
+```
+sudo chown kali:kali /usr/local/src/ -R
+mkdir -p /usr/local/src/nginx
+```
+- Переходим в исходный каталог nginx и загружаем исходный пакет  
+
+```
+cd /usr/local/src/nginx/
+sudo apt install dpkg-dev
+apt source nginx
+```  
+
+- Проверяем загруженные файли и смотрим чтобы установленная версия nginx была одинаковая со скаченными файлами   
+
+```
+ll
+sudo nginx -v  
+```  
+
+![ModSecurity_1]()    
+
+- Установка libmodsecurity3  
+
+```  
+sudo apt install git
+git clone --depth 1 -b v3/master --single-branch https://github.com/SpiderLabs/ModSecurity /usr/local/src/ModSecurity/
+cd /usr/local/src/ModSecurity/
+```  
+
+- Устанавливаем зависимости сборки  
+
+``` 
+sudo apt install gcc make build-essential autoconf automake libtool libcurl4-openssl-dev liblua5.3-dev libpcre2-dev libfuzzy-dev ssdeep gettext pkg-config libpcre3 libpcre3-dev libxml2 libxml2-dev libcurl4 libgeoip-dev libyajl-dev doxygen
+``` 
+
+- Установка необходимых подмодулей  
+
+``` 
+git submodule init
+git submodule update
+```  
+
+- Настройка среды сборки  
+
+```
+./build.sh
+./configure
+```  
+
+- Компилируем исходный код (для 2 ядер)  
+
+```
+make -j2
+sudo make install
+```  
+
+- Переходим в исходный каталог nginx  
+
+```
+cd /usr/local/src/nginx/nginx-1.26.0
+```  
+
+- Устанавливаем зависимости сборки nginx  
+
+```
+sudo apt build-dep nginx
+sudo apt install uuid-dev
+```  
+
+- Настраиваем среду  
+
+```
+sudo ./configure --with-compat --with-openssl=/usr/include/openssl/ --add-dynamic-module=/usr/local/src/ModSecurity-nginx
+```  
+В ходе выполнения команды, должен создаться **Makefile**, содержащий в себе информацию, представленную на скриншоте
+
+![ModSecurity_2]()  
+
+- Создаем модуль ModSecuriy Nginx Connector и копируем его
+
+```
+sudo make modules
+sudo cp objs/ngx_http_modsecurity_module.so /usr/share/nginx/modules/  
+```  
+
+- Редактируем файл nginx находящегося по пути  
+
+```
+sudo vim /etc/nginx/nginx.conf
+```
+
+- В открытый файл добавляем следующие строки (в места как на скриншоте)  
+
+![ModSecurity_3]()  
+
+```
+load_module modules/ngx_http_modsecurity_module.so;
+
+modsecurity on;
+modsecurity_rules_file /etc/nginx/modsec/main.conf;
+```  
+
+- Создаем каталог для хранения файлов ModSecurity, копируем файл конфигурации и открываем его для редактирования  
+
+```
+sudo mkdir /etc/nginx/modsec/ 
+sudo cp /usr/local/src/ModSecurity/modsecurity.conf-recommended /etc/nginx/modsec/modsecurity.conf
+sudo vim /etc/nginx/modsec/modsecurity.conf
+```   
+
+Редактируем файл как указано на скриншотах  
+![ModSecurity_4]()  
+![ModSecurity_5]()  
+![ModSecurity_6]()  
+
+- Создаем файл main.conf  
+
+```
+sudo vim /etc/nginx/modsec/main.conf 
+```  
+
+Записываем в данный файл следующую строку  
+```
+Include /etc/nginx/modsec/modsecurity.conf
+```  
+
+- Копируем файл сопоставления Unicode  
+
+``` 
+sudo cp /usr/local/src/ModSecurity/unicode.mapping /etc/nginx/modsec/
+``` 
+
+- Проверяем конфигурацию nginx  
+
+``` 
+sudo nginx -t
+``` 
+
+Результат должен содержать сообщение об успешном прохождении теста  
+![ModSecurity_7]()  
+
+## 2.2) Включение правил OWASP  
+
+- Загружаем последнюю версию OWASP CRS, извлекаем файл, перемещаем и переименовываем его  
+
+``` 
+wget https://github.com/coreruleset/coreruleset/archive/v3.3.4.tar.gz 
+tar xvf v3.3.4.tar.gz 
+sudo mv coreruleset-3.3.4/ /etc/nginx/modsec/ 
+sudo mv /etc/nginx/modsec/coreruleset-3.3.4/crs-setup.conf.example /etc/nginx/modsec/coreruleset-3.3.4/crs-setup.conf 
+``` 
+
+- Открываем основной файл конфигураций и редактируем его  
+
+```
+sudo vim /etc/nginx/modsec/main.conf 
+```
+
+Добавляем следующие строки  
+```
+Include /etc/nginx/modsec/coreruleset-3.3.4/crs-setup.conf
+Include /etc/nginx/modsec/coreruleset-3.3.4/rules/*.conf
+```
+
+
