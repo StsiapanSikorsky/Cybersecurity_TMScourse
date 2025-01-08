@@ -54,7 +54,7 @@ print(false_count,' антивирусов показали что URL безо�
 ```
 
 ## Результат работы скрипта  
-![Virustotal_1]()
+![Virustotal_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/Virustotal_1.png)
 
 Результат работы скрипта, полностью соответствует результатам на проверки URL на сайте  
-![Virustotal_2]()  
+![Virustotal_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/Virustotal_2.png)  
