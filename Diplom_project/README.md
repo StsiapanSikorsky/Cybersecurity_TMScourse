@@ -71,29 +71,29 @@ Get-Process | Where-Object { $_.Name -match "mimikatz|hashcat" }
 Данный случай предположительно находится на этапе равертывания ВПО, так как скорее всего злоумышленник уже получил доступ к системе   
 
 ### 7) Из какой системы данный лог и что можно о нем сказать  
-![1_4]()  
+![1_4](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_4.png)  
 **Ответ:**  
 Логи из системы WAF, в нем можно найти информацию о том, когда был зафиксирован запрос, типы пакетов, уникальные идентификаторы пакетов, используемый протокол (UDP), вид запроса (Snd-исходящий), IP-источника запросов и используемый порт, запрашиваемое доменное имя.   
 Поскольку большое количество запросов выполнялось в одно и тоже время, предположительно логи описывают DDoS атаку.  
 
 ### 8) Что происходит согласно следующим событиям  
-![1_1]()  
-![1_2]()  
+![1_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_1.png)  
+![1_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_2.png)  
 
 ### 9) Что означает сообщение? Оно подозрительное? Почему?  
-![1_3]()  
+![1_3](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_3.png)  
 **Ответ:**   
 Сообщение о запуске PSEXESVC.exe, позволяющего запускать администраторам процессы на удаленных системах и получатть вывод консольных приложений на локальной машине что является подозрительным, особенно если запущен на пользовательском ПК.  
 
 ### 10) Что можно сказать о данных логах  
-![1_5]()  
-![1_6]()  
-![1_7]()  
+![1_5](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_5.png)  
+![1_6](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_6.png)  
+![1_7](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_7.png)  
 **Ответ:**  
 Лог показывает загрузку и запуск вредоносного скрипта на PowerShell  
 
 ### 11) Что можно сказать о скрипте  
-![1_8]()  
+![1_8](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_8.png)  
 **Ответ:**  
 Действияя скрипта описаны в ДЗ №27 Ч2  
 
@@ -183,7 +183,7 @@ $exec_wrapper = [ScriptBlock]::Create($split_parts[0])
 Анализ URL через Virustotal показал небезопасность данного URL. Поиск и анализ информации о домене показал, что домен использовался для атаки ВПО-вымагателя используя протокол SMB для распространения и шифрования зараженных файлов.  
 
 ### 23) Что можно сказать об отчете о сканировании nmap, ессть ли какие либо проблемы безопасности?  
-![1_9]()  
+![1_9](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_9.png)  
 **Ответ:**   
 Отчет показал используемный открытый порт для SSH 22 (рекомендуется менять на кастомный) и используемые ключи хоста, а также какие приложения используют 80 порт tcp (Веб сервер Apache Tomcat c HTTP-коннектером Coyote)
 
