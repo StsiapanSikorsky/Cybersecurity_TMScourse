@@ -206,8 +206,8 @@ hashcat -m 1000 -a 3 hash2.txt ?а?а?а?а?а?а?а?а?а?а?а?а --increment 
 ![1_10](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_10.png)  
 
 
-## 2. Создать скрипт который устанавиливает инструменты и снимает дамп оперативной памяти предоставляя его просмотр
-Код скрипта:
+## 2. Создать скрипт который устанавиливает инструменты и снимает дамп оперативной памяти предоставляя его просмотр  
+Код скрипта:  
 ```bash
 #!/bin/bash
 
@@ -280,7 +280,8 @@ install_avml
 get_dump_avml
 search_dump
 ```  
-![2_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/2_1.png)
+Результат выполнения скрипта:  
+![2_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/2_1.png)  
 
 ## 3. Автоматизировать процесс проверки url через virustotal  
 
