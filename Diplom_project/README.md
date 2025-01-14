@@ -206,7 +206,81 @@ hashcat -m 1000 -a 3 hash2.txt ?а?а?а?а?а?а?а?а?а?а?а?а --increment 
 ![1_10](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/1_10.png)  
 
 
+## 2. Создать скрипт который устанавиливает инструменты и снимает дамп оперативной памяти предоставляя его просмотр
+Код скрипта:
+```bash
+#!/bin/bash
 
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+CYAN='\033[0;36m'
+RESET='\033[0m'
+
+sudo apt update
+
+#Install volatility
+install_volatility() {
+	if command -v volatility >dev/null 2>&1; then
+		print -e "$GREEN Volatility is installed $RESET"
+	else	
+		echo -e "$YELLOW Install volatility $RESET"
+		sudo git clone https://github.com/volatilityfoundation/volatility3.git
+		cd volatility3
+	fi	
+	
+	sudo python3 -m venv venv
+	sudo source venv/bin/active
+	sudo pip3 install -r requirements.txt
+	echo -e "$GREEN Volatility has been installed $RESET"
+}
+
+#Install avml
+install_avml(){
+	echo -e "$YELLOW Install avml $RESET"
+	cd ~
+	sudo apt install curl wget
+	sudo wget https://github.com/microsoft/avml/releases/download/v0.14.0/avml
+	sudo chmod +x avml
+	sudo mv avml /usr/local/bin
+	echo -e "$GREEN avml has been installed $RESET"
+}
+
+#Install dwarf2json
+install_dwaf2json(){
+	echo -e "$YELLOW Install dwarf2json $RESET"
+	sudo apt install dwarf2json
+	git clone https://github.com/volatilityfoundation/dwarf2json
+	cd dwarf2json
+	sudo apt install golang-go
+	go-build
+	KERNEL=uname -r
+	./dwarf2json linux --elf /boot/$KERNEL symboltable.json
+	cd ~
+	echo -e "$GREEN dwarf2json has been installed and sympol table has been create"
+}
+
+#Get dump
+get_dump_avml(){
+	echo -e "$YELLOW Get dump dump.dmp $RESET"
+	sudo avml -o dump.dmp
+	echo -e "$GREEN memory dump create $RESET"
+}
+
+#Search dump
+search_dump(){
+	echo -e "$YELLOW Search dump $RESET"
+	uname -a
+	cd volatility3
+	sudo python3 vol.py -f ~/dump.dmp a 
+}
+
+install_volatility
+install_avml
+get_dump_avml
+search_dump
+```  
+![2_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Diplom_project/img/2_1.png)
 
 ## 3. Автоматизировать процесс проверки url через virustotal  
 
