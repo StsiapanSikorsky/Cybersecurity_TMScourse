@@ -16,24 +16,24 @@
 ## 2) Анализ crackme.exe  
 ### 2.1 Скачать crackme.exe  
 Скачивание с репозитория GitHub:  
-![Crack_1]()  
+![Crack_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_33/img/Crack_1.png)  
 Скаченный файл CrackMe1.exe  
-![Crack_2]()  
+![Crack_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_33/img/Crack_2.png)  
 
 ### 2.2 Process monitor hacker  
 - запуск process monitor hacker  
-![ProcM_1]()  
+![ProcM_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_33/img/ProcM_1.png)  
 Программа мониторит и анализирует все запущенные процессы на ОС Windows, работу Firewall и сети.  
 
 ### 2.3 IDA  
 - Скачивание IDA Free
 Для скачивания и получению ключа необходимо пройти регистрацию, после чего скачиваем IDA Free на выбранную ОС, также скачиваем лицензионный ключ и закидаваем еего в корневую папку с IDA  
-![IDA_1]()  
+![IDA_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_33/img/IDA_1.png)  
 
 Запускаем программу для файла CrackMe1.exe  
-![IDA_2]()  
+![IDA_2](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_33/img/IDA_2.png)  
 
 ### 2.4 CFF Explorer  
 CFF Explorer - инструмент позволяющий анализирвать испольняемые файлы и редактировать их  
-![CFF_1]()  
+![CFF_1](https://github.com/StsiapanSikorsky/Cybersecurity_TMScourse/blob/main/Task_33/img/CFF_1.png)  
 
